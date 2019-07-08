@@ -1,0 +1,305 @@
+/*-- header --*/
+.header {
+    padding: 1em 0;
+    border-top: 3px solid #FF8D1B;
+}
+/*****
+--------------
+头部第一层导航
+--------------
+*****/
+header{
+    /*position: fixed;*/
+    top: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 4rem;
+    background: black;
+}
+
+header .top_main{
+    width: 100%;
+    padding: 0;
+    background:rgba(0,0,0,.3);
+    /*border-bottom: 1px solid #393939;*/
+    height: 100%;
+    position: relative;
+}
+/*注册和登陆*/
+header .top_main .sign_in,header .top_main .sign_out{
+    font-weight: 700;
+    height:100%;
+    position: absolute;
+    left: 10%;
+    padding: 0 1%;
+    border-left: 1px solid #393939;
+    border-right: 1px solid #393939;
+    cursor: pointer;
+}
+header .top_main .sign_in:hover,header .top_main .sign_out:hover{
+    background: rgba(0,0,0,.6);
+}
+header .top_main .sign_in .sign_in_click i,header .top_main .sign_out .sign_out_click i{
+    font-size: 2vw;
+    line-height: 4rem;
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+header .sign_in_click,header .sign_out_click{
+    width: 100%;
+    position: relative;
+    line-height: 3rem;
+    color: #f1f1f1;
+}
+header .sign_in_click:hover + .sign_in_panel,header .sign_out_click:hover + .sign_out_panel{
+    display: block;
+}
+header .sign_in_panel:hover,header .sign_out_panel:hover{
+    display: block;
+}
+header .sign_in_panel,header .sign_out_panel{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 30rem;
+    height: 28rem;
+    background: rgba(0,0,0,.6);
+    display: none;
+    z-index: 9999;
+}
+header .sign_in_panel img{
+    position: absolute;
+    top: 10%;
+    left: 26.4%;
+    height: 18%;
+    width: auto;
+}
+header .sign_out_panel img:first-child{
+    position: absolute;
+    top: 10%;
+    left: 23%;
+    height: 23%;
+    width: auto;
+}
+header .sign_out_panel img:nth-of-type(2){
+    position: absolute;
+    top: 42%;
+    left: 22%;
+    border-radius: 50%;
+    height: 17%;
+    width: auto;
+}
+#person_id{
+    position: absolute;
+    top: 41%;
+    font-size: 1.4vw;
+    left: 41%;
+}
+#person_id:hover{
+    color: red;
+}
+.sign_out_panel span{
+    position: absolute;
+    bottom: 32%;
+    left: 27%;
+    font-size: 1vw;
+    color: rgba(255,0,0,.9)
+}
+header .sign_in_panel .sign_in_button{
+    display: inline-block;
+    background: white;
+    border-radius: 2vw;
+    color: black;
+    position: absolute;
+    top: 45%;
+    left: 19%;
+    width: 58%;
+    height: 2.5vw;
+    line-height: 2.7vw;
+    text-align: center;
+    font-size: 1.3vw;
+}
+header .sign_out_panel .sign_out_button{
+    display: inline-block;
+    background: white;
+    border-radius: 2vw;
+    color: black;
+    position: absolute;
+    top: 70%;
+    left: 19%;
+    width: 58%;
+    height: 2.5vw;
+    line-height: 2.7vw;
+    text-align: center;
+    font-size: 1.3vw;
+}
+header .sign_in_panel .sign_in_button:hover,header .sign_out_panel .sign_out_button:hover{
+    background-color: #cccccc;
+}
+header .sign_in_panel .create_id{
+    display: inline-block;
+    background: rgba(0,0,0,1);
+    border: 1px solid #cccccc;
+    border-radius: 2.5rem;
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 19%;
+    width: 58%;
+    height: 2.5vw;
+    line-height: 2.5vw;
+    text-align: center;
+    font-size: 1.36rem
+}
+header .sign_in_panel .create_id:hover{
+    border: 1px solid #666666;
+}
+header .top_main .LOGO{
+    display: block;
+    height: 100%;
+    width: 20%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+header .top_main .LOGO img{
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+header .top_main .search{
+    position: absolute;
+    right: 10%;
+    padding: 0 1rem;
+    height: 100%;
+    border-right: 1px solid #393939;
+    border-left: 1px solid #393939;
+    cursor: pointer;
+    top: 0;
+}
+.movie_container{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 0.6% 0 0 0;
+}
+.movie_play,.movie_title{
+    width: 70%;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+.movie_play{
+    padding: 0;
+}
+.movie_play video{
+    width: 100%;
+}
+.movie_title{
+    color: white;
+}
+.movie_title h3{
+    padding: 0;
+    /* float: left; */
+    display: inline-block;
+    margin: 0;
+    line-height: 1;
+}
+.star_num{
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+}
+.star_num  i{
+    float: left;
+    color: yellow;
+}
+
+
+/*标题*/
+.news_sub_title{
+    display: block;
+    height: 33px;
+    margin-top: 4rem;
+    margin-bottom: 0.8rem;
+}
+.news_sub_title span{
+    display: inline-block;
+    height: 100%;
+    width: 5px;
+    background: red;
+}
+.news_sub_title h2{
+    display: inline-block;
+    font-size: 3.4rem;
+    color: black;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    height: 100%;
+}
+/*电影播放*/
+.movie_player{
+    width: 73%;
+}
+.movie_player video,.movie_sub_content{
+    width: 100%;
+}
+.movie_more{
+    width: 85%;
+    margin: 0 auto;
+}
+/*推荐*/
+.guess_like{
+    width: 70%;
+}
+.movie_sub_content ul{
+    width: 100%;
+    padding: 2rem 0;
+}
+.movie_sub_content ul li{
+    width: 23.4%;
+    height: 359px;
+    /* display: inline-block; */
+    float: left;
+}
+.movie_sub_content ul li:not(:nth-of-type(1)),.movie_sub_content ul li:not(:nth-of-type(5)){
+    margin-left: 1rem;
+}
+.movie_sub_content ul li a,.movie_sub_content ul li a img{
+    width: 100%;
+}
+.movie_sub_content ul li>span{
+    color: black;
+    font-size: 1.6rem;
+    text-align: center;
+    display: block;
+    font-weight: 600;
+}
+.top_movie{
+    width: 30%;
+}
+.top_movie_content,.top_movie_content ul,.top_movie_content li,.top_movie_content li a img{
+    width: 100%;
+    color: black;
+}
+.top_movie_content{
+    margin-top: 2.7rem;
+}
+.top_movie_content li:not(:nth-of-type(1)){
+    margin-top: -0.7rem;
+}
+.top_movie_content li a{
+    display: block;
+    position: relative;
+}
+.top_movie_content li a>span{
+    display: block;
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    height: 33px;
+    text-align: center;
+    width: 100%;
+    line-height: 33px;
+    color: white;
+    background: rgba(0,0,0,.6);
+}

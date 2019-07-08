@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+    <title>news1</title>
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/tools.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <style>
+        .goTo_top{
+            position: fixed;
+            width: 60px;
+            height: 50px;
+            bottom: 40px;
+            right: 40px;
+            /*display: block;*/
+            color: #8a0000;
+            font-size: 5rem;
+            text-align: center;
+            display: none;
+        }
+    </style>
+    <script src="js/news.js"></script>
+</head>
+<body>
+<!--header -->
+    <header id="header">
+    <div class="top_main">
+        <div class="sign_in">
+            <div class="sign_in_click">
+                <i class="fa fa-sign-in fa-fw"></i>
+            </div>
+            <div class="sign_in_panel" id="sign_in_panel">
+                <img src="images/LOGO.jpg" alt="">
+                <a href="" class="sign_in_button">SIGN IN</a>
+                <a href="" class="create_id">CREATE AN ACCOUNT</a>
+            </div>
+        </div>
+        <a href="../../index.html" class="LOGO"><img src="images/LOGO.jpg" alt=""></a>
+    </div>
+    <div class="top_guide">
+        <ul id="top_guide" class="top_guide_menu">
+            <li data-menuanchor="News"><a href="#News">News</a></li>
+            <li data-menuanchor="Comics"><a href="#Comics">Read Comics</a></li>
+            <li data-menuanchor="TV"><a href="#TV">TV Shows</a></li>
+            <li data-menuanchor="Movies"><a href="#Movies">Movies</a></li>
+        </ul>
+        <div class="top_guide_container">
+            <div class="top_guide_content top_guide_active">
+                <div class="section News" id="News">
+                    <div class="news_title">
+                        <span>LASTED</span>
+                        <span>NEWS!</span>
+                        <span></span>
+                    </div>
+                    <div class="news_more wrapper">
+                        <a href="pages/News/News.html">MORE..</a>
+                    </div>
+                    <div class="news_lists">
+                        <ul >
+                            <li>
+                                <a href=""><img src="../top_guide_img/news/1.png" alt="" class="effect"></a>
+                                <h3>COMICS</h3>
+                                <a href="">
+                                    <p>This Week in Marvel Visits MoPOP's Marvel Exhibit and Gets a Look at the Creation of Comics</p>
+                                </a>
+                                <h4>2 Days ago</h4>
+                            </li>
+                            <li>
+                                <a href=""><img src="../top_guide_img/news/2.jpg" alt="" class="effect"></a>
+                                <h3 class="hot">MOVIES:Spider Man II</h3>
+                                <a href="">
+                                    <p>Welcome our new friend——spider man</p>
+                                </a>
+                                <h4>4 Days ago</h4>
+                            </li>
+                            <li>
+                                <a href=""><img src="../top_guide_img/news/1.png" alt="" class="effect"></a>
+                                <h3>COMICS</h3>
+                                <a href="">
+                                    <p>Bryan Edward Hill Reveals the Tech World of the Upcoming 'What If? X-Men'</p>
+                                </a>
+                                <h4>2 Days ago</h4>
+                            </li>
+                            <li>
+                                <a href=""><img src="../top_guide_img/news/2.jpg" alt="" class="effect"></a>
+                                <h3>COMICS</h3>
+                                <a href="">
+                                    <p>Bryan Edward Hill Reveals the Tech World of the Upcoming 'What If? X-Men'</p>
+                                </a>
+                                <h4>A Week ago</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="top_guide_content">
+                <div class="section Read_Comics">
+                    <div class="comic_read">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/comic/comic_book/1.jpg" alt="">
+                                    <h3>Fantastic Four</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/comic/comic_book/2.jpg" alt="">
+                                    <h3>Iceman</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/comic/comic_book/3.jpg" alt="">
+                                    <h3>Infinity Wars</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/comic/comic_book/4.jpg" alt="">
+                                    <h3>Star Wars:The Last Jedi Adaptation</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="comic_title">
+                        <div class="comic_background"></div>
+                        <div class="comic_sub_title">
+                            <p>MARVEL UNLIMITED</p>
+                            <h3>ENJOY THE COMIC</h3>
+                            <a href="../../pages/Comic/Comic.html" target="_blank">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top_guide_content">
+                <div class="section TV_Shows">
+                    <div class="shows_main">
+                        <div class="shows_title">
+                            <h2>TV SHOWS</h2>
+                            <p>EXPLORE THE CHARACTERS AND STORIES THAT SHAPE MARVEL TV!</p>
+                            <a href="../../pages/Movies/movie.html#Latest-tv-series" target="_blank">Watch More..</a>
+                        </div>
+                    </div>
+                    <div class="shows_watch">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/shows/shows1.jpg" alt="">
+                                    <h3>Marvel's Iron Fist I Season 2</h3>
+                                    <span>SEP 7.2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/shows/shows2.jpg" alt="">
+                                    <h3>Marvel's Luke Cage I Season 2</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/shows/shows3.jpg" alt="">
+                                    <h3>Marvel's Jessica Jones I Season 2</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/shows/shows4.jpg" alt="">
+                                    <h3>Marvel's Cloak & Dagger I Season 1</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/shows/shows6.jpg" alt="">
+                                    <h3>Marvel's Iron Fist I Season 2</h3>
+                                    <span>SEP 7.2018</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="top_guide_content">
+                <div class="section Movie_guide">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="../top_guide_img/movie/复仇者联盟4.jpg" alt="">
+                                <span>复仇者联盟4</span>
+                                <div class="movie_detail">
+                                    <span>2019</span>
+                                    <div class="block-stars">
+                                        <ul class="w3l-ratings">
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../top_guide_img/movie/复仇者联盟3.jpg" alt="">
+                                <span>复仇者联盟3</span>
+                                <div class="movie_detail">
+                                    <span>2018</span>
+                                    <div class="block-stars">
+                                        <ul class="w3l-ratings">
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../top_guide_img/movie/惊奇队长.jpg" alt="">
+                                <span>惊奇队长</span>
+                                <div class="movie_detail">
+                                    <span>2019</span>
+                                    <div class="block-stars">
+                                        <ul class="w3l-ratings">
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../top_guide_img/movie/蜘蛛侠1.jpg" alt="">
+                                <span>蜘蛛侠：返校季</span>
+                                <div class="movie_detail">
+                                    <span>2018</span>
+                                    <div class="block-stars">
+                                        <ul class="w3l-ratings">
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../top_guide_img/movie/黑豹1.jpeg" alt="">
+                                <span>黑豹</span>
+                                <div class="movie_detail">
+                                    <span>2018</span>
+                                    <div class="block-stars">
+                                        <ul class="w3l-ratings">
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="">MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+    <script type="text/javascript">
+    $(".top_guide").hover(function () {
+        $(".top_guide_container").stop().fadeIn();
+    },function () {
+        $(".top_guide_container").stop().fadeOut();
+    });
+    $("#top_guide li").each(function (index) {
+        var liNode= $(this);
+        liNode.hover(function () {
+            console.log(liNode);
+            timeoutId = setTimeout(function () {
+                $(".top_guide_content.top_guide_active").removeClass("top_guide_active");
+                $(".top_guide_content").eq(index).addClass("top_guide_active");
+            })
+        })
+    })
+</script>
+<!--header end!!-->
+    <div class="news_main_container">
+        <div class="news pull-left">
+            <div class="news_main_sub_title">
+                <span>TV SHOWS</span>
+                <h2>‘Marvel’s Daredevil’ Season 3 Primer: Where We Left Off</h2>
+                <p>Get a refresher on Matt Murdock, Wilson Fisk, Karen Page, and Foggy Nelson’s most recent events before Season 3 debuts Friday, October 19 on Netflix.</p>
+            </div>
+
+
+            <div class="news_main_content">
+                <p>
+                    Season 3 of ‘Marvel’s Daredevil’ is almost here, as new episodes premiere October 19th on Netflix. Though it’s been awhile since Season 2 debuted, quite a lot has happened for many of the characters since then, as seen in “Marvel’s The Defenders,” “Marvel’s The Punisher,” and “Marvel’s Luke Cage.”
+                </p>
+                <p>
+                    Gather around Hell’s Kitchen while we give you a reminder of what everyone has been up to as we head into the new season…
+                </p>
+                <span>Matt Murdock/Daredevil (Charlie Cox)</span>
+                <img src="images/mark.jpg" alt="">
+                <p>Matt Murdock, blind lawyer by day, super-powered hero of Hell’s Kitchen by night, was believed to have been killed when the Midland Circle building collapsed around him and his lover turned foe, the reincarnated Elektra Natchios, at the end of “Marvel’s The Defenders” - with Matt sacrificing himself to save his fellow heroes Luke Cage, Jessica Jones and Danny Rand, as well as New York City. While his friends mourn his loss, Matt is actually alive, being cared for by nuns. Now it’s up to him to pick up the pieces and determine what type of hero he is supposed to be, or if being a hero is even what his destiny holds. The looming return of the Wilson Fisk will only add to Matt’s troubles…</p>
+
+                <span>Karen Page (Deborah Ann Woll)</span>
+                <img src="images/karen.jpg" alt="">
+                <p>Former Nelson and Murdock employee Karen Page honed her skills to became an investigative journalist in the midst of the dissolution of her friends’ practice. After surprising her with the revelation that he was Daredevil, Matt Murdock promised her he was giving up his costumed identity, but the events of “Marvel’s The Defenders” caused him to break that vow – and seemingly to take Matt’s life as well. Karen was forced to move on with her life, but not one to shy away from danger, she found herself assisting Frank Castle during “Marvel’s The Punisher.” Believing Frank to be a good person at heart, she did her best to help him when she could, and Frank ultimately ended up revealing to the world that he was alive in order to save Karen’s life when she was taken hostage by bomber Lewis Wilson. Karen in turn then helped Frank escape from the authorities by pretending to be his prisoner. </p>
+
+                <span>Foggy Nelson (Elden Henson)</span>
+                <img src="images/foggy.jpg" alt="">
+                <p>As Matt’s best friend since his college days and, eventually, his law partner, Foggy Nelson was never on board with Matt’s “extracurricular” activities. Eventually, Matt’s increasingly frequent absences hurt their friendship and led to the two dissolving their partnership and Foggy taking a job with Hogarth, Chao and Benowitz. After helping Luke Cage secure an early release from prison, Foggy assisted Matt, as they navigated their estrangement, during “Marvel’s The Defenders.” Following the Midland Circle showdown and Matt's apparent death, Foggy looked to throw himself into his work, as he helped Luke again when he had legal issues and questions in Season 2 of “Marvel’s Luke Cage.” </p>
+
+                <span>Wilson Fisk (Vincent D’Onofrio)</span>
+                <img src="images/fisk.jpg" alt="">
+                <p>The Hell’s Kitchen criminal, who hid behind a mask of philanthropy, was finally put in jail where he belongs after a long-fought battle with Daredevil and thanks to the legal skills of Nelson and Murdock. In the aftermath, Fisk decided that if he couldn’t currently rule Hell’s Kitchen, then he would rule his prison. Not only did he manipulate an imprisoned Frank Castle into killing his opposition behind bars, he then orchestrated Castle’s escape, unleashing the Punisher back onto the world to help take out more of his rivals. Soon after, Matt Murdock visited Fisk in prison and his threat to cause legal problems for Fisk’s beloved Vanessa -- who had fled overseas when he was arrested -- drove Fisk into a violent rage, leading him to attack Murdock and vow revenge on both Matt and Foggy when he got out of prison. However, the fact that Matt had physically fought back against Fisk during his attack gave him pause, leading him to ask to see files on Murdock. </p>
+            </div>
+        </div>
+        <div class="news_hot_container pull-left">
+            <div class="news_sub_title">
+                <span></span>
+                <h2 style="font-family: fantasy;">THE LASTED</h2>
+            </div>
+            <div class="news_hot_title">
+                <h3>THE HYPE BOX</h3>
+                <span>Can’t-miss news and updates from across the Marvel Universe!</span>
+            </div>
+            <div class="news_hot_content news_container" id="news_container">
+                <ul>
+                    <li>
+                        <div class="news_img">
+                            <a href=""><img src="images/news_main1.jpg" alt=""></a>
+                        </div>
+                        <div class="news_main">
+                            <span>TV SHOWS</span>
+                            <p>‘Marvel’s Daredevil’ Season 3 Primer: Where We Left Off</p>
+                            <span>3 HOURS AGO</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="news_img">
+                            <a href=""><img src="images/news_main2.jpg" alt=""></a>
+                        </div>
+                        <div class="news_main">
+                            <span>TV SHOWS</span>
+                            <p>A Mutant Detention Facility Raid Becomes the Focus on a New Episode of ‘The Gifted’</p>
+                            <span>6 HOURS AGO</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="news_img">
+                            <a href=""><img src="images/news_main3.jpg" alt=""></a>
+                        </div>
+                        <div class="news_main">
+                            <span>COMIC</span>
+                            <p>Halloween Spooklight: Journey Into Mystery #2</p>
+                            <span>7 HOURS AGO</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="news_img">
+                            <a href=""><img src="images/news_main4.jpg" alt=""></a>
+                        </div>
+                        <div class="news_main">
+                            <span>COMIC</span>
+                            <p>Updated: Read a New Halloween-Themed Comic Every Day This October</p>
+                            <span>8 HOURS AGO</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="news_img">
+                            <a href=""><img src="images/news_main5.jpg" alt=""></a>
+                        </div>
+                        <div class="news_main">
+                            <span>THIS WEEK IN MARVEL</span>
+                            <p>How Many Canadian Marvel Characters Can Tom Green Name? | This Week In Marvel</p>
+                            <span>9 HOURS AGO</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="news_img">
+                            <a href=""><img src="images/news_main6.jpg" alt=""></a>
+                        </div>
+                        <div class="news_main">
+                            <span>COMIC</span>
+                            <p>Who Are the New Guardians of the Galaxy?</p>
+                            <span>3 Days ago</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="news_comment info_send_container">
+        <div class="send_zoom" id="edit_form">
+            <span>发表你的看法~</span>
+            <span id="text_length"></span>
+            <form action="" role="form" class="clearfix "  id="myForm" >
+                <div class="form_group" >
+                    <!--输入框-->
+                    <div class="send_box" id="sendBox" >
+                        <div class="send_input" id="sendInput" contenteditable="true" tabindex="1" ></div>
+                    </div>
+                    <!--添加表情和图片区域-->
+                    <div class="send_box_sub" id="sendBoxSub">
+                        <span id="myEmoji"><i class="fa-fw fa-smile-o fa"></i>表情</span>
+                        <div class="my_emoji">
+                            <ul id="myTab">
+                                <li class="li_active emoji_set"><a href="javascript:;">预设</a></li>
+                                <li class="emoji_hot"><a href="javascript:;">热门</a></li>
+                            </ul>
+                            <div id="myTabContent" class="tab-content">
+                                <div class="tab_pane active_pane" id="set">
+                                    <div class="emoji_1">
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="hot">
+                                    <div class="emoji_2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" id="send" class="msg_send pull-right disabled" disabled="true">发布</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="msg_show" id="msgShow">
+            <div class="msg_come ">
+                <div class="msg_come_sub">
+                    <div class="person_img">
+                        <img src="images/person1.jpg" alt="">
+                    </div>
+                    <div class="msg_info">
+                        <h3>shane Leo</h3>
+                        <span>7分钟前</span>
+                    </div>
+                    <div class="msg_box">
+                        <div class="msg_content">
+                            <p>woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa</p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment_pic">
+                        <span><i class="fa fa-fw fa-edit fa-edit-block"></i></span>
+                        <span style="font-size: 1.5vw">|</span>
+                        <span>11</span>
+                        <span id="thumbsGood"><i class="fa fa-fw fa-heart-o heart"></i></span>
+                    </div>
+                    <div class="comment_now">
+                    </div>
+                </div>
+                <!--评论发布的动态区域-->
+                <div class="comment_sub">
+                    <!--评论人的头像-->
+                    <div class="comment_per_img pull-left">
+                        <img src="images/person2.jpg" alt="">
+                    </div>
+                    <!--评论人的信息-->
+                    <div class="comment_per_info pull-left">
+                        <!--评论人的名字和评论内容-->
+                        <div class="comment_per_info_content">
+                            <a href="#" class="comment_per_name">shane mark:</a>
+                            <span class="comment_per_say">你说的对你说的对你说的对你说的对你说的对你说的对你说的对
+                                    你说的对你说的对你说的对你说的对你说的对你说的对你说的对
+                                    你说的对你说的对你说的对你说的对你说的对你说的对你说的对</span>
+                        </div>
+                        <!--评论人评论的时间以及回复-->
+                        <div class="comment_per_time">
+                            <span class="comment_per_time_show pull-left">2018-7-21 18:0:0</span>
+                            <span class="span_delete">删除</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="msg_come">
+                <div class="msg_come_sub">
+                    <div class="person_img">
+                        <img src="images/person3.jpg" alt="">
+                    </div>
+                    <div class="msg_info">
+                        <h3>shane Leo</h3>
+                        <span>7分钟前</span>
+                    </div>
+                    <div class="msg_box">
+                        <div class="msg_content">
+                            <p>woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa</p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment_pic">
+                        <span><i class="fa fa-fw fa-edit fa-edit-block"></i></span>
+                        <span style="font-size: 1.5vw">|</span>
+                        <span>11</span>
+                        <span id="thumbsGood"><i class="fa fa-fw fa-heart-o heart"></i></span>
+                    </div>
+                    <div class="comment_now">
+                    </div>
+                </div>
+                <!--评论发布的动态区域-->
+                <div class="comment_sub">
+                    <!--评论人的头像-->
+                    <div class="comment_per_img pull-left">
+                        <img src="images/person1.jpg" alt="">
+                    </div>
+                    <!--评论人的信息-->
+                    <div class="comment_per_info pull-left">
+                        <!--评论人的名字和评论内容-->
+                        <div class="comment_per_info_content">
+                            <a href="#" class="comment_per_name">shane mark:</a>
+                            <span class="comment_per_say">你说的对你说的对你说的对你说的对你说的对你说的对你说的对
+                                    你说的对你说的对你说的对你说的对你说的对你说的对你说的对
+                                    你说的对你说的对你说的对你说的对你说的对你说的对你说的对</span>
+                        </div>
+                        <!--评论人评论的时间以及回复-->
+                        <div class="comment_per_time">
+                            <span class="comment_per_time_show pull-left">2018-7-21 18:0:0</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="msg_come">
+                <div class="msg_come_sub">
+                    <div class="person_img">
+                        <img src="images/person2.jpg" alt="">
+                    </div>
+                    <div class="msg_info">
+                        <h3>shane Leo</h3>
+                        <span>7分钟前</span>
+                    </div>
+                    <div class="msg_box">
+                        <div class="msg_content">
+                            <p>woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa</p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment_pic">
+                        <span><i class="fa fa-fw fa-edit fa-edit-block"></i></span>
+                        <span style="font-size: 1.5vw">|</span>
+                        <span>11</span>
+                        <span id="thumbsGood"><i class="fa fa-fw fa-heart-o heart"></i></span>
+                    </div>
+                    <div class="comment_now">
+                    </div>
+                </div>
+                <!--评论发布的动态区域-->
+                <div class="comment_sub">
+                    <!--评论人的头像-->
+                    <div class="comment_per_img pull-left">
+                        <img src="../img/1.jpg" alt="">
+                    </div>
+                    <!--评论人的信息-->
+                    <div class="comment_per_info pull-left">
+                        <!--评论人的名字和评论内容-->
+                        <div class="comment_per_info_content">
+                            <a href="#" class="comment_per_name">shane mark:</a>
+                            <span class="comment_per_say">你说的对你说的对你说的对你说的对你说的对你说的对你说的对
+                                    你说的对你说的对你说的对你说的对你说的对你说的对你说的对
+                                    你说的对你说的对你说的对你说的对你说的对你说的对你说的对</span>
+                        </div>
+                        <!--评论人评论的时间以及回复-->
+                        <div class="comment_per_time">
+                            <span class="comment_per_time_show pull-left">2018-7-21 18:0:0</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="news_comment_zoom">
+        <!--<span>2018 10-23</span>-->
+        <ul id="clickPlus">
+            <li>
+                <a href="javascript:;" id="plus"><i class="fa fa-fw fa-search-plus"></i></a>
+            </li>
+            <li><a href="javascript:;" id="minus"><i class="fa fa-fw fa-search-minus"></i></a></li>
+            <li><a href="#edit_form" id="commentNow"><i class="fa fa-fw fa-edit"></i></a></li>
+        </ul>
+    </div>
+    <script>
+        $(window).scroll(function () {
+           var t = $(this).scrollTop();
+           if (t>=20){
+               $(".news_comment_zoom").stop().fadeIn();
+           } else {
+               $(".news_comment_zoom").stop().fadeOut();
+           }
+        });
+        //    放大字体
+        $("#clickPlus i").click(function () {
+            // console.log($(this));
+            var fontSize = $(".news_main_content").css("font-size");
+            // console.log(fontSize);
+            var textFontSize = parseFloat(fontSize , 10);
+            // console.log(textFontSize);
+            var unit = fontSize.slice(-2);
+            // console.log(unit);
+            var cName = $(this).attr("class");
+            // console.log(cName);
+            if(cName == "fa fa-fw fa-search-plus"){
+                if (textFontSize<= 24) {
+                    textFontSize +=2;
+                }
+            }else if (cName == "fa fa-fw fa-search-minus"){
+                if (textFontSize>=16){
+                    textFontSize-=2;
+                }
+            }
+            $(".news_main_content").css("font-size", textFontSize + unit);
+            // console.log( $(".news_main_content").css("font-size", textFontSize + unit))
+        })
+    </script>
+    <a href="javascript:;" class="goTo_top"><i class="fa fa-fw fa-angle-double-up"></i></a>
+    <script>
+        //    到头部
+        $(window).scroll(function () {
+            var height = $(this).scrollTop();
+            if (height>400){
+                $(".goTo_top").stop().fadeIn();
+            } else {
+                $(".goTo_top").stop().fadeOut();
+            }
+        });
+        //    点击回头
+        $(".goTo_top").stop().click(function () {
+            $("body,html").animate({
+                scrollTop:0
+            },500);
+        })
+    </script>
+</body>
+</html>

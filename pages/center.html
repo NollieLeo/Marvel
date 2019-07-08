@@ -1,0 +1,657 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>漫威中心</title>
+    <link rel="stylesheet" href="../font-awesome.css/font-awesome.css">
+    <link rel="stylesheet" href="../css/center.css">
+    <link rel="stylesheet" href="../css/tools.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/center.js"></script>
+
+</head>
+<body>
+<header id="header" class="header-active">
+    <div class="top_main">
+        <div class="sign_in">
+            <div class="sign_in_click">
+                <i class="fa fa-sign-in fa-fw"></i>
+            </div>
+            <div class="sign_in_panel" id="sign_in_panel">
+                <img src="../img/LOGO.jpg" alt="">
+                <a href="" class="sign_in_button">SIGN IN</a>
+                <a href="" class="create_id">CREATE AN ACCOUNT</a>
+            </div>
+        </div>
+        <a href="../index.html" class="LOGO"><img src="../img/LOGO.jpg" alt=""></a>
+
+    </div>
+
+</header>
+<!--//左边导航部分-->
+<nav class="menu-activea">
+    <h1>Menu</h1>
+    <ul>
+          <li class="active_li">动态中心</li>
+          <li>个人信息</li>
+          <li>漫画收藏</li>
+          <li>发布的动态</li>
+          <li>联系我们</li>
+  </ul>
+</nav>
+<main>
+    <!--动态发布-->
+    <section class="active_Section">
+        <div class="center_info">
+            <div class="info_img">
+                <img src="../img/video_pic60.jpg" alt="">
+            </div>
+            <div class="info_content">
+                <h3>Shane Leo</h3>
+                <div class="sub_info">
+                    <span>lv.2</span>
+                    <span>男</span>
+                </div>
+                <p>there is a bus waiting for me.there is a bus waiting for me</p>
+            </div>
+        </div>
+        <!--动态发布区域-->
+        <div class="info_send">
+            <!--信息发布区域-->
+            <div class="info_send_container pull-left">
+                <div class="send_zoom" id="edit_form">
+                    <span>编辑新鲜事~</span>
+                    <span id="text_length"></span>
+                    <form action="" role="form" class="clearfix "  id="myForm" >
+                        <div class="form_group" >
+                            <!--输入框-->
+                            <div class="send_box" id="sendBox" >
+                                <div class="send_input" id="sendInput" contenteditable="true" tabindex="1" ></div>
+                            </div>
+                            <!--添加表情和图片区域-->
+                            <div class="send_box_sub" id="sendBoxSub">
+                                <span id="myEmoji"><i class="fa-fw fa-smile-o fa"></i>表情</span>
+                                <span><i class="fa fa-fw fa-image"></i>图片</span>
+                                <span></span>
+                                <div class="my_emoji">
+                                    <ul id="myTab">
+                                        <li class="li_active emoji_set"><a href="javascript:;">预设</a></li>
+                                        <li class="emoji_hot"><a href="javascript:;">热门</a></li>
+                                    </ul>
+                                    <div id="myTabContent" class="tab-content">
+                                        <div class="tab_pane active_pane" id="set">
+                                            <div class="emoji_1">
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="hot">
+                                            <div class="emoji_2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" id="send" class="msg_send pull-right disabled" disabled="true">发布</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--信息浏览区域-->
+                <div class="msg_show" id="msgShow">
+                    <div class="msg_come ">
+                        <div class="msg_come_sub">
+                            <div class="person_img">
+                                <img src="../img/movie_bj-1.1.jpg" alt="">
+                            </div>
+                            <div class="msg_info">
+                                <h3>shane Leo</h3>
+                                <span>7分钟前</span>
+                            </div>
+                            <div class="msg_box">
+                                <div class="msg_content">
+                                    <p>woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                        woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                        woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                        woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                        woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa</p>
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="comment_pic">
+                                <span><i class="fa fa-fw fa-edit fa-edit-block"></i></span>
+                                <span style="font-size: 1.5vw">|</span>
+                                <span>11</span>
+                                <span id="thumbsGood"><i class="fa fa-fw fa-heart-o heart"></i></span>
+                            </div>
+                            <div class="comment_now">
+                            </div>
+                        </div>
+                        <!--评论发布的动态区域-->
+                        <div class="comment_sub">
+                            <!--评论人的头像-->
+                            <div class="comment_per_img pull-left">
+                                <img src="../img/1.jpg" alt="">
+                            </div>
+                            <!--评论人的信息-->
+                            <div class="comment_per_info pull-left">
+                                <!--评论人的名字和评论内容-->
+                                <div class="comment_per_info_content">
+                                    <a href="#" class="comment_per_name">shane mark:</a>
+                                    <span class="comment_per_say">你说的对你说的对你说的对你说的对你说的对你说的对你说的对
+                                    你说的对你说的对你说的对你说的对你说的对你说的对你说的对
+                                    你说的对你说的对你说的对你说的对你说的对你说的对你说的对</span>
+                                </div>
+                                <!--评论人评论的时间以及回复-->
+                                <div class="comment_per_time">
+                                    <span class="comment_per_time_show pull-left">2018-7-21 18:0:0</span>
+                                    <span class="span_delete">删除</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="msg_come">
+                        <div class="msg_come_sub">
+                            <div class="person_img">
+                                <img src="../img/movie_bj-1.1.jpg" alt="">
+                            </div>
+                            <div class="msg_info">
+                                <h3>shane Leo</h3>
+                                <span>7分钟前</span>
+                            </div>
+                            <div class="msg_box">
+                                <div class="msg_content">
+                                    <p>woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                        woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                        woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                        woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                        woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa</p>
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="comment_pic">
+                                <span><i class="fa fa-fw fa-edit fa-edit-block"></i></span>
+                                <span style="font-size: 1.5vw">|</span>
+                                <span>11</span>
+                                <span id="thumbsGood"><i class="fa fa-fw fa-heart-o heart"></i></span>
+                            </div>
+                            <div class="comment_now">
+                            </div>
+                        </div>
+                        <!--评论发布的动态区域-->
+                        <div class="comment_sub">
+                            <!--评论人的头像-->
+                            <div class="comment_per_img pull-left">
+                                <img src="../img/1.jpg" alt="">
+                            </div>
+                            <!--评论人的信息-->
+                            <div class="comment_per_info pull-left">
+                                <!--评论人的名字和评论内容-->
+                                <div class="comment_per_info_content">
+                                    <a href="#" class="comment_per_name">shane mark:</a>
+                                    <span class="comment_per_say">你说的对你说的对你说的对你说的对你说的对你说的对你说的对
+                                    你说的对你说的对你说的对你说的对你说的对你说的对你说的对
+                                    你说的对你说的对你说的对你说的对你说的对你说的对你说的对</span>
+                                </div>
+                                <!--评论人评论的时间以及回复-->
+                                <div class="comment_per_time">
+                                    <span class="comment_per_time_show pull-left">2018-7-21 18:0:0</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="msg_come">
+                        <div class="msg_come_sub">
+                            <div class="person_img">
+                                <img src="../img/movie_bj-1.1.jpg" alt="">
+                            </div>
+                            <div class="msg_info">
+                                <h3>shane Leo</h3>
+                                <span>7分钟前</span>
+                            </div>
+                            <div class="msg_box">
+                                <div class="msg_content">
+                                    <p>woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                        woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                        woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                        woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                        woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa</p>
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="comment_pic">
+                                <span><i class="fa fa-fw fa-edit fa-edit-block"></i></span>
+                                <span style="font-size: 1.5vw">|</span>
+                                <span>11</span>
+                                <span id="thumbsGood"><i class="fa fa-fw fa-heart-o heart"></i></span>
+                            </div>
+                            <div class="comment_now">
+                            </div>
+                        </div>
+                        <!--评论发布的动态区域-->
+                        <div class="comment_sub">
+                            <!--评论人的头像-->
+                            <div class="comment_per_img pull-left">
+                                <img src="../img/1.jpg" alt="">
+                            </div>
+                            <!--评论人的信息-->
+                            <div class="comment_per_info pull-left">
+                                <!--评论人的名字和评论内容-->
+                                <div class="comment_per_info_content">
+                                    <a href="#" class="comment_per_name">shane mark:</a>
+                                    <span class="comment_per_say">你说的对你说的对你说的对你说的对你说的对你说的对你说的对
+                                    你说的对你说的对你说的对你说的对你说的对你说的对你说的对
+                                    你说的对你说的对你说的对你说的对你说的对你说的对你说的对</span>
+                                </div>
+                                <!--评论人评论的时间以及回复-->
+                                <div class="comment_per_time">
+                                    <span class="comment_per_time_show pull-left">2018-7-21 18:0:0</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="lasted_topic pull-left">
+                <div class="lasted_person_info">
+                    <div class="lasted_person_info_content">
+                        <div class="info_content_span">
+                            <a href="">52</a>
+                            <span>关注</span>
+                        </div>
+                        <div class="info_content_span">
+                            <a href="">100</a>
+                            <span>粉丝</span>
+                        </div>
+                        <div class="info_content_span">
+                            <a href="">54</a>
+                            <span>动态</span>
+                        </div>
+
+                    </div>
+                    <div class="person_more_info">
+                        <a href="">动态信息</a>
+                    </div>
+                </div>
+                <div class="lasted_news_zoom">
+                    <div class="topic_title">
+                        <span>热门新闻</span>
+                        <span class="pull-right"><i class="fa fa-fw fa-refresh fa-spin"></i>换新闻</span>
+                    </div>
+                    <div class="topic_content">
+                        <ul>
+                            <li><a href="">#毒液#</a></li>
+                            <li><a href="">#最新美剧#</a></li>
+                            <li><a href="">#复联四#</a></li>
+                            <li><a href="">#惊奇队长预告！#</a></li>
+                            <li><a href="">#漫威收购#</a></li>
+                        </ul>
+                    </div>
+                    <div class="topic_more">
+                        <span>更多精彩话题..</span>
+                    </div>
+                </div>
+                <div class="lasted_comic_zoom">
+                    <div class="lasted_comic_zoom_title topic_title">
+                        <span>推荐漫画</span>
+                        <span class="pull-right"><i class="fa fa-fw fa-refresh fa-spin"></i>换一波</span>
+                    </div>
+                    <div class="lasted_comic_zoom_container">
+                        <div class="comic_zoom_content">
+                            <div class="newest_comic">
+                                <div class="newest_comic_pic pull-left">
+                                    <img src="../img/comic/comic_book/1.jpg" alt="">
+                                </div>
+                                <div class="newest_comic_info pull-left">
+                                    <span>Fantastic Four</span>
+                                    <span>2018</span>
+                                    <p><span>简介:</span>讲述了神奇四侠讲述了神奇四侠讲述了神奇四侠讲述了神奇四侠讲述了神奇四侠讲述了神奇四侠讲述了神奇四侠讲述了神奇四侠........</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lasted_comic_zoom_container">
+                        <div class="comic_zoom_content">
+                            <div class="newest_comic">
+                                <div class="newest_comic_pic pull-right">
+                                    <img src="../img/comic/comic_book/1.jpg" alt="">
+                                </div>
+                                <div class="newest_comic_info pull-left">
+                                    <span>Fantastic Four</span>
+                                    <span>2018</span>
+                                    <p><span>简介:</span>讲述了神奇四侠讲述了神奇四侠讲述了神奇四侠讲述了神奇四侠讲述了神奇四侠讲述了神奇四侠讲述了神奇四侠讲述了神奇四侠........</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lasted_comic_zoom_container">
+                        <div class="comic_zoom_content">
+                            <div class="newest_comic">
+                                <div class="newest_comic_pic pull-left">
+                                    <img src="../img/comic/comic_book/1.jpg" alt="">
+                                </div>
+                                <div class="newest_comic_info pull-left">
+                                    <span>Fantastic Four</span>
+                                    <span>2018</span>
+                                    <p><span>简介:</span>讲述了神奇四侠讲述了神奇四侠讲述了神奇四侠讲述了神奇四侠讲述了神奇四侠讲述了神奇四侠讲述了神奇四侠讲述了神奇四侠........</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lasted_comic_more topic_more">
+                        <span>更多漫画..</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--修改个人信息部分-->
+    <section class="personal_info" id="personInfo">
+        <div class="personal_section_container">
+            <!--个人信息的头部-->
+            <div class="personal_sub_info">
+                <div class="personal_sub_info_content">
+                    <div class="img_sub">
+                        <img src="../img/video_pic60.jpg" alt="">
+                    </div>
+                    <div class="name_sub"><span>Shane Leo<i class="fa fa-fw fa-mars" style="color: #43b3cd;font-size: 1.3vw;margin: 0 .5rem;"></i></span></div>
+                    <p>there is a bus waiting for me.I do need a love~</p>
+                    <div class="fans_sub">
+                        <div class="fans_content" id="fansContent">
+                            <div class="fans_content_span fans_content_span_active">
+                                <span>基本信息</span>
+                            </div>
+                            <div class="fans_content_span">
+                                <span>粉丝</span>
+                                <a href="javascript:;">110</a>
+                            </div>
+                            <div class="fans_content_span">
+                                <span>关注</span>
+                                <a href="javascript:;">200</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--个人信息的修改部分-->
+            <div class="personal_main_info personal_info_div info_section_active">
+                <div class="personal_main_content">
+                    <div class="personal_set_info">
+                        <div class="personal_set_info_title"><span>基本信息</span><span>--------------------------------------------------------------------------------------------------------------------</span><span id="changeInfo" class="change_info">修改</span></div>
+                        <div class="personal_zoom">
+                            <div class="personal_set pull-left">
+                                <form action="">
+                                    <div class="personal_sign_name personal_set_zoom">
+                                        <span>注册账号：</span><span>Shane Leo</span>
+                                    </div>
+                                    <div class="personal_nick_name personal_set_zoom" >
+                                        <span>昵称：</span>
+                                        <span id="nickNameShow" style="display: block">Mark Stewards</span>
+                                        <input type="text" id="nickname" style="display: none">
+                                    </div>
+                                    <div class="personal_real_name personal_set_zoom" >
+                                        <span>真实姓名：</span>
+                                        <span id="realNameShow" style="display: block">翁恺敏</span>
+                                        <input type="text" id="realName" style="display: none">
+                                    </div>
+                                    <div class="personal_sex personal_set_zoom" >
+                                        <span>性别：</span>
+                                        <span id="sex" style="display: block">男</span>
+                                        <div id="sex_choose" style="display: none;float: left">
+                                            <input type="radio" name="radio" value="1" checked>男
+                                            <input type="radio" name="radio" value="2">女
+                                        </div>
+                                    </div>
+                                    <div class="personal_address personal_set_zoom" >
+                                        <span>地址：</span>
+                                        <div id="address" class="pull-left">福建 &nbsp;福州</div>
+                                    </div>
+                                    <div class="personal_summery personal_set_zoom" >
+                                        <span>简介：</span>
+                                        <p style="display: block" id="summeryShow">梦倒塌的地方今已爬满青苔</p>
+                                        <textarea id="summery" style="display: none"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="detail_info pull-left">
+                                <form action="">
+                                    <div class="personal_sign_mail personal_set_zoom">
+                                        <span>注册邮箱：</span><span>736653759@qq.com</span>
+                                    </div>
+                                    <div class="personal_sign_qq personal_set_zoom">
+                                        <span>QQ：</span><span>50331120</span>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="all_fans personal_info_div" >
+                <div class="fans_container">
+                    <ul>
+                        <li>
+                            <div class="fans_img pull-left">
+                                <img src="../img/7.jpg" alt="">
+                            </div>
+                            <div class="fans_detail_info pull-left">
+                                <span>Shane Leo <i class="fa fa-fw fa-mars"></i></span>
+                                <p>what i want is what i got</p>
+                            </div>
+                            <div class="fans_direct pull-right">
+                                <i class="fa fa-fw fa-plus"></i><span>关注</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fans_img pull-left">
+                                <img src="../img/3.jpg" alt="">
+                            </div>
+                            <div class="fans_detail_info pull-left">
+                                <span>Shane Leo <i class="fa fa-fw fa-venus"></i></span>
+                                <p>what i want is what i got</p>
+                            </div>
+                            <div class="fans_direct pull-right">
+                                <i class="fa fa-fw fa-plus"></i><span>关注</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fans_img pull-left">
+                                <img src="../img/video_pic72.jpg" alt="">
+                            </div>
+                            <div class="fans_detail_info pull-left">
+                                <span>Shane Leo <i class="fa fa-fw fa-venus"></i></span>
+                                <p>what i want is what i got</p>
+                            </div>
+                            <div class="fans_direct pull-right">
+                                <i class="fa fa-fw fa-plus"></i><span>关注</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fans_img pull-left">
+                                <img src="../img/6.jpg" alt="">
+                            </div>
+                            <div class="fans_detail_info pull-left">
+                                <span>Shane Leo <i class="fa fa-fw fa-mars"></i></span>
+                                <p>what i want is what i got</p>
+                            </div>
+                            <div class="fans_direct pull-right">
+                                <i class="fa fa-fw fa-plus"></i><span>关注</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fans_img pull-left">
+                                <img src="../img/0.jpg" alt="">
+                            </div>
+                            <div class="fans_detail_info pull-left">
+                                <span>Shane Leo <i class="fa fa-fw fa-mars"></i></span>
+                                <p>what i want is what i got</p>
+                            </div>
+                            <div class="fans_direct pull-right">
+                                <i class="fa fa-fw fa-plus"></i><span>关注</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fans_img pull-left">
+                                <img src="../img/movie_pic10.png" alt="">
+                            </div>
+                            <div class="fans_detail_info pull-left">
+                                <span>Shane Leo <i class="fa fa-fw fa-venus"></i></span>
+                                <p>what i want is what i got</p>
+                            </div>
+                            <div class="fans_direct pull-right">
+                                <i class="fa fa-fw fa-plus"></i><span>关注</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fans_img pull-left">
+                                <img src="../img/video_pic94.jpg" alt="">
+                            </div>
+                            <div class="fans_detail_info pull-left">
+                                <span>Shane Leo <i class="fa fa-fw fa-mars"></i></span>
+                                <p>what i want is what i got</p>
+                            </div>
+                            <div class="fans_direct pull-right">
+                                <i class="fa fa-fw fa-plus"></i><span>关注</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fans_img pull-left">
+                                <img src="../img/video_pic96.jpg" alt="">
+                            </div>
+                            <div class="fans_detail_info pull-left">
+                                <span>Shane Leo <i class="fa fa-fw fa-venus"></i></span>
+                                <p>what i want is what i got</p>
+                            </div>
+                            <div class="fans_direct pull-right">
+                                <i class="fa fa-fw fa-plus"></i><span>关注</span>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="all_blogueur personal_info_div">
+                <div class="fans_container blogueur_container">
+                    <ul>
+                        <li>
+                            <div class="fans_img pull-left">
+                                <img src="../img/7.jpg" alt="">
+                            </div>
+                            <div class="fans_detail_info pull-left">
+                                <span>Shane Leo <i class="fa fa-fw fa-mars"></i></span>
+                                <p>what i want is what i got</p>
+                            </div>
+                            <div class="fans_direct pull-right">
+                                <i class="fa fa-fw fa-check"></i><span>已关注</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fans_img pull-left">
+                                <img src="../img/3.jpg" alt="">
+                            </div>
+                            <div class="fans_detail_info pull-left">
+                                <span>Shane Leo <i class="fa fa-fw fa-venus"></i></span>
+                                <p>what i want is what i got</p>
+                            </div>
+                            <div class="fans_direct pull-right">
+                                <i class="fa fa-fw fa-check"></i><span>已关注</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fans_img pull-left">
+                                <img src="../img/video_pic72.jpg" alt="">
+                            </div>
+                            <div class="fans_detail_info pull-left">
+                                <span>Shane Leo <i class="fa fa-fw fa-venus"></i></span>
+                                <p>what i want is what i got</p>
+                            </div>
+                            <div class="fans_direct pull-right">
+                                <i class="fa fa-fw fa-check"></i><span>已关注</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fans_img pull-left">
+                                <img src="../img/6.jpg" alt="">
+                            </div>
+                            <div class="fans_detail_info pull-left">
+                                <span>Shane Leo <i class="fa fa-fw fa-mars"></i></span>
+                                <p>what i want is what i got</p>
+                            </div>
+                            <div class="fans_direct pull-right">
+                                <i class="fa fa-fw fa-check"></i><span>已关注</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fans_img pull-left">
+                                <img src="../img/0.jpg" alt="">
+                            </div>
+                            <div class="fans_detail_info pull-left">
+                                <span>Shane Leo <i class="fa fa-fw fa-mars"></i></span>
+                                <p>what i want is what i got</p>
+                            </div>
+                            <div class="fans_direct pull-right">
+                                <i class="fa fa-fw fa-check"></i><span>已关注</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fans_img pull-left">
+                                <img src="../img/movie_pic10.png" alt="">
+                            </div>
+                            <div class="fans_detail_info pull-left">
+                                <span>Shane Leo <i class="fa fa-fw fa-venus"></i></span>
+                                <p>what i want is what i got</p>
+                            </div>
+                            <div class="fans_direct pull-right">
+                                <i class="fa fa-fw fa-check"></i><span>已关注</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fans_img pull-left">
+                                <img src="../img/video_pic94.jpg" alt="">
+                            </div>
+                            <div class="fans_detail_info pull-left">
+                                <span>Shane Leo <i class="fa fa-fw fa-mars"></i></span>
+                                <p>what i want is what i got</p>
+                            </div>
+                            <div class="fans_direct pull-right">
+                                <i class="fa fa-fw fa-check"></i><span>已关注</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fans_img pull-left">
+                                <img src="../img/video_pic96.jpg" alt="">
+                            </div>
+                            <div class="fans_detail_info pull-left">
+                                <span>Shane Leo <i class="fa fa-fw fa-venus"></i></span>
+                                <p>what i want is what i got</p>
+                            </div>
+                            <div class="fans_direct pull-right">
+                                <i class="fa fa-fw fa-check"></i><span>已关注</span>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--收藏的漫画展示部分-->
+    <section >
+
+    </section>
+</main>
+
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+/*页面样式*/
+/*基本默认值*/
+html{
+    font-size: 62.5%;
+    color: white;
+    -webkit-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    text-size-adjust: none;
+    /*overflow: hidden;*/
+}
+/*选中文字默认值，是否有阴影*/
+::selection{
+    text-shadow: none;
+}
+
+/*工具样式*/
+/*自定义居中样式*/
+.center-block{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.pull-right{
+    float: right !important;
+}
+.pull-left{
+    float: left !important;
+}
+.text-right{
+    text-align: right !important;
+}
+.text-left{
+    text-align: left !important;
+}
+.text-center{
+    text-align: center !important;
+}
+.hide{
+    display: none !important;
+}
+.show{
+    display: block !important;
+}
+.invisible{
+    visibility: hidden;
+}
+.text-hide{
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+/*清除浮动*/
+/*.clearfix:after{*/
+/*clear: both;*/
+/*}*/
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* =================
+    第二中清除浮动
+   =================*/
+
+/*.clearfix:before,*/
+/*.clearfix:after{*/
+/*content: ' ';*/
+/*display: block;*/
+/*}*/
+
+/*
+    ===============
+     浏览器更新提示
+    ===============
+*/
+.browserupgrade{
+    margin: 0;
+    padding: 1rem;
+    background: #ccc;
+}
+
+/*
+    ===============
+     页面样式设置
+    ===============
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;==
+    height: 100%;
+    font-size: 1.3vw;
+    font-family: "Adobe Hebrew";
+    color: white;
+    line-height: 1.5vw;
+    /*overflow: hidden;*/
+}
+a{
+    color: #666;
+    text-decoration: none;
+}
+a:hover,a:active,a:focus{
+
+    text-decoration: none;
+    outline: none;
+}
+*,*:after,*:before{
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:after,*:before{
+    display: block;
+    content: '';
+}
+*:after{
+    clear: both;
+}
+/*无序列表样式*/
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+/*盒子曲线阴影样式*/
+.effect{
+    background:#fff;
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0,0,0,.3),0 0 30px rgba(0,0,0,.2) inset;
+    -webkit-box-shadow:0 1px 4px rgba(0,0,0,.3),0 0 30px rgba(0,0,0,.2) inset;
+    -moz-box-shadow:0 20px 4px rgba(0,0,0,.3),0 0 20px rgba(255,0,0,.2) inset ;
+    -o-box-shadow: 0 20px 4px rgba(0,0,0,.3),0 0 20px rgba(255,0,0,.2) inset;
+}
+.effect:before,.effect:after{
+    background:#fff;
+    content: "";
+    position: absolute;
+    top: 50%;
+    bottom: 1px;
+    left: 9px;
+    right: 9px;
+    -webkit-box-shadow: 0 0 17px rgba(0,0,0,.8);
+    box-shadow: 0 0 17px rgba(0,0,0,.8);
+    -moz-box-shadow: 0 0 17px rgba(0,0,0,.8);
+    -o-box-shadow: 0 0 17px rgba(0,0,0,.8);
+    border-radius: 10%/5%;
+    z-index: -1;
+}
+/*折角效果*/
+.wrapper::before{
+    /*设置折角实现的位置;*/
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width:0;
+    content:"";
+    display: block;
+    border: .53rem solid #7201aa;
+    border-color:rgba(0, 0, 0, 0.85) rgba(0, 0, 0, 0.85) transparent transparent;
+    background-color: #fff; //设置为透明的话,会显示绿底;
+    /*设置元素的阴影效果*/
+    box-shadow:1px -1px 2px rgba(0, 0, 0, 0.5) ;
+}

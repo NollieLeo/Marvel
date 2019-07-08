@@ -1,0 +1,666 @@
+/*****
+--------------
+头部第一层导航
+--------------
+*****/
+header{
+    position:relative;
+    top: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 4rem;
+    background: black;
+}
+
+header .top_main{
+    width: 100%;
+    padding: 0;
+    background: rgba(0,0,0,.3);
+    border-bottom: 1px solid #393939;
+    height: 100%;
+    position: relative;
+}
+/*注册和登陆*/
+header .top_main .sign_in,header .top_main .sign_out{
+    font-weight: 700;
+    height:100%;
+    position: absolute;
+    left: 10%;
+    padding: 0 1%;
+    border-left: 1px solid #393939;
+    border-right: 1px solid #393939;
+    cursor: pointer;
+}
+header .top_main .sign_in:hover,header .top_main .sign_out:hover{
+    background: rgba(0,0,0,.6);
+}
+header .top_main .sign_in .sign_in_click i,header .top_main .sign_out .sign_out_click i{
+    font-size: 2vw;
+    line-height: 3rem;
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+header .sign_in_click,header .sign_out_click{
+    width: 100%;
+    position: relative;
+    line-height: 4rem;
+    color: #f1f1f1;
+}
+header .sign_in_click:hover + .sign_in_panel,header .sign_out_click:hover + .sign_out_panel{
+    display: block;
+}
+header .sign_in_panel:hover,header .sign_out_panel:hover{
+    display: block;
+}
+header .sign_in_panel,header .sign_out_panel{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 26rem;
+    height: 28rem;
+    background: rgba(0,0,0,.6);
+    display: none;
+    z-index: 9999;
+}
+header .sign_in_panel img{
+    position: absolute;
+    top: 10%;
+    left: 25.4%;
+    height: 18%;
+    width: auto;
+}
+header .sign_out_panel img:first-child{
+    position: absolute;
+    top: 10%;
+    left: 23%;
+    height: 23%;
+    width: auto;
+}
+header .sign_out_panel img:nth-of-type(2){
+    position: absolute;
+    top: 42%;
+    left: 22%;
+    border-radius: 50%;
+    height: 17%;
+    width: auto;
+}
+#person_id{
+    position: absolute;
+    top: 41%;
+    font-size: 1.4vw;
+    left: 41%;
+}
+#person_id:hover{
+    color: red;
+}
+.sign_out_panel span{
+    position: absolute;
+    bottom: 32%;
+    left: 27%;
+    font-size: 1vw;
+    color: rgba(255,0,0,.9)
+}
+header .sign_in_panel .sign_in_button{
+    display: inline-block;
+    background: white;
+    border-radius: 2vw;
+    color: black;
+    position: absolute;
+    top: 45%;
+    left: 19%;
+    width: 58%;
+    height: 2.5vw;
+    line-height: 2.7vw;
+    text-align: center;
+    font-size: 1.3vw;
+}
+header .sign_out_panel .sign_out_button{
+    display: inline-block;
+    background: white;
+    border-radius: 2vw;
+    color: black;
+    position: absolute;
+    top: 70%;
+    left: 19%;
+    width: 58%;
+    height: 2.5vw;
+    line-height: 2.7vw;
+    text-align: center;
+    font-size: 1.3vw;
+}
+header .sign_in_panel .sign_in_button:hover,header .sign_out_panel .sign_out_button:hover{
+    background-color: #cccccc;
+}
+header .sign_in_panel .create_id{
+    display: inline-block;
+    background: rgba(0,0,0,1);
+    border: 1px solid #cccccc;
+    border-radius: 2.5rem;
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 19%;
+    width: 58%;
+    height: 2.5vw;
+    line-height: 2.5vw;
+    text-align: center;
+    font-size: 1.26rem
+}
+header .sign_in_panel .create_id:hover{
+    border: 1px solid #666666;
+}
+header .top_main .LOGO{
+    display: block;
+    height: 100%;
+    width: 20%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+header .top_main .LOGO img{
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+header .top_main .search{
+    position: absolute;
+    right: 10%;
+    padding: 0 1rem;
+    height: 100%;
+    border-right: 1px solid #393939;
+    border-left: 1px solid #393939;
+    cursor: pointer;
+    top: 0;
+}
+header .top_guide{
+    width: 100%;
+    padding: 0;
+    background: rgba(0,0,0,.3);
+    height: 50%;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+}
+header .top_guide>ul{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+}
+header .top_guide>ul >li{
+    width: 25%;
+    text-align: center;
+    list-style: none;
+}
+header .top_guide>ul>li>a{
+    font-size: 1.4vw;
+    height: 100%;
+    line-height: 4rem;
+    text-decoration: none;
+    display: inline-block;
+    /* line-height: 1; */
+    padding: 0 1rem;
+    text-align: center;
+    cursor: pointer;
+    color: rgba(255,255,255,1);
+    font-weight: 700;
+    text-shadow: 0.01rem 0.01rem #666666, 0.02rem 0.02rem #666666, 0.025rem 0.025rem #666666, 0.05rem 0.05rem #666666, 0.1rem 0.1rem #666666, 0.15rem 0.15rem #666666, 2px 2px 1px #666666;
+}
+header .top_guide >ul >li:hover{
+    border-bottom: 4px solid red;
+    list-style: none;
+
+}
+header .top_guide .active{
+    background: rgba(0,0,0,0.5);
+    color: white;
+}
+header .top_guide_container{
+    height: 427px;
+    width: 60%;
+    left: 20%;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    display: none;
+    -webkit-border-radius: 0 0 1rem 1rem;
+    -moz-border-radius: 0 0 1rem 1rem;
+    border-radius: 0 0 .5rem .5rem;
+}
+.top_guide_content{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.top_guide_active{
+    display: block;
+}
+/*-------------*/
+/*管理员界面内容*/
+/*-------------*/
+.adm_container{
+    width: 100%;
+}
+.adm_title{
+    width: 50%;
+    margin: 0 auto;
+}
+.adm_title h1{
+    text-align: center;
+    color: black;
+    font-size: 3vw;
+}
+.adm_lists {
+    width: 100%;
+    color: white;
+}
+.adm_lists>ul{
+    width: 70%;
+    margin: 0 auto;
+}
+.adm_lists ul>li.active{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+.adm_lists ul>li{
+    float: left;
+    height: 4rem;
+    width: 24.5%;
+    background: #000;
+    text-align: center;
+    cursor: pointer;
+    line-height: 4rem;
+    border-radius: 2rem 2rem 0 0;
+}
+.adm_lists ul>li+li{
+    margin-left: 0.5%;
+}
+.adm_section{
+    width: 1059px;
+    margin:  0 auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #6b6b6b;
+}
+
+.usersInfo_content{
+    border: 1px solid #6b6767;
+    width: 24%;
+    color: black;
+    padding: .5rem;
+    float: left;
+    margin: .5rem;
+}
+.users_imgName{
+    width: 100%;
+    background: #fbfbfb;
+}
+.users_imgName_container{
+    width: 90%;
+    margin: 0 auto;
+}
+.users_imgName_container>img{
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    float: left;
+}
+.users_imgName_container> span{
+    float: left;
+    margin: 8% 10.9%;
+}
+.users_detail{
+    background: #fbfbfb;
+    width: 100%;
+    margin-top: .5rem;
+}
+
+.users_detail>ul{
+    font-size: 1.1vw;
+}
+.users_detail>ul>li>i,.users_detail>ul>li>span{
+    float: left;
+}
+.users_detail>ul>li>i{
+    font-weight: 600;
+}
+
+.users_detail_two{
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+}
+.users_detail_two li{
+    float: left;
+    width: 48%;
+}
+.users_detail_two>li>span:hover{
+    color: red;
+    cursor: pointer;
+}
+.users_right{
+    width: 100%;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+}
+.users_right >ul >li > a{
+    float: left;
+}
+.users_right>ul{
+    width: 100%;
+    font-size: 1.2vw;
+}
+.users_right>ul>li{
+    float: left;
+    width: 100%;
+}
+.users_right>ul>li>a:hover{
+    color: red;
+}
+.users_right>ul>li>a>i{
+    font-weight: 700;
+}
+.ban i {
+    color: #980000;
+}
+.banTime_num{
+    float: left;
+}
+/*管理论坛部分*/
+.adm_forum,.forum_content,.per_message{
+    width: 100%;
+}
+.per_message{
+    color: black;
+    border-bottom: 1px dotted #000;
+    padding: .5rem 0;
+    height: 4rem;
+}
+.per_message>p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 66%;
+    line-height: 4rem;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+.per_message>p:hover{
+    color: red;
+    cursor: pointer;
+}
+.per_message i{
+    font-weight: 700;
+    font-size: 1.2vw;
+}
+.per_message i,.per_message span{
+    float: left;
+    line-height: 4rem;
+}
+.message_person,.message_detail{
+    float: right;
+    margin-left: 1%;
+}
+.adm_main{
+    display: none;
+}
+.adm_active{
+    display: block;
+}
+
+/*漫画部分*/
+.comic_content{
+    width: 100%;
+}
+.per_comic,.per_video{
+    width: 49%;
+    color: black;
+    float: left;
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+}
+.comic_img{
+    width: 40%;
+    float: left;
+}
+
+.comic_img img{
+    width: 100%;
+}
+.comic_detail{
+    width: 60%;
+    float: left;
+    padding: 1%;
+}
+.comic_detail p {
+    margin: 0 ;
+    padding: 0;
+    width: 100%;
+    word-wrap:break-word;
+    word-break:break-all;
+    overflow: hidden;
+}
+.per_comic i{
+    font-weight: 700;
+    font-size: 1.2vw;
+}
+.per_comic i,.per_comic span{
+    float: left;
+}
+.detail{
+    margin: 3px 0;
+    font-size: 1.1vw;
+}
+.comic_control{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: .5rem;
+    cursor: pointer;
+}
+.comic_control>i{
+    color: #e01010;
+}
+/*电影电视剧部分开始*/
+.adm_movies .admMovie_title{
+    width: 100%;
+}
+.admMovie_title{
+    color: black;
+    position: relative;
+    border-bottom: 1px dotted #393939;
+}
+.admMovie_title > span {
+    font-size: 1.9vw;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+.per_video{
+    width: 19%;
+}
+.video_img{
+    width: 100%;
+    padding: 1rem;
+}
+.video_img img{
+    width: 100%;
+    height: 260px;
+}
+.video_detail h5{
+    margin: 0;
+    text-align: center;
+}
+.video_detail .detail i{
+    font-weight: 700;
+}
+.video_detail .detail i,.video_detail .detail span{
+    float: left;
+}
+.detail p{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    word-wrap: unset;
+    height: 3rem;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.control_detail{
+    cursor: pointer;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.control_detail a{
+    float: left;
+    width: 49%;
+    font-size: 1.6rem;
+}
+.control_detail i{
+    color: #e01010;
+}
+.sort{
+    margin: 0 auto;
+    text-align: center;
+}
+.sort span{
+    font-size: 1.3vw;
+    display: inline-block;
+    width: 15rem;
+    height: 3.3rem;
+    line-height: 3.3rem;
+    text-align: center;
+    border-radius: 1.3rem;
+    background: red;
+    margin: 1rem 2rem;
+    cursor: pointer;
+}
+.sort span:first-child{
+    background: green;
+}
+.back{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.back i{
+    color: #e01010;
+}
+.adm_shows{
+    display: none;
+}
+
+/*弹框~*/
+.adm_alert{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.3);
+    z-index: 99;
+}
+.adm_form{
+    width: 24%;
+    border-radius: 1rem 1rem 1rem 1rem;
+    background: #fff;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative;
+}
+.adm_form h3{
+    text-align: center;
+    color: red;
+}
+.ban_time{
+    width: 61%;
+    color: black;
+    margin: 5rem auto;
+}
+.ban_time p {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: orangered;
+}
+.ban_time input{
+    line-height: 1.5;
+    width: 5rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.ban_time span,.ban_time input{
+    float: left;
+}
+.banOK i{
+    color: green;
+}
+.fd_button{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.fd_button a{
+    float: left;
+    width: 18rem;
+    text-align: center;
+    color: #393939;
+}
+.alert_info{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+.alert_content{
+    color: #ff4343;
+    background: rgba(0,0,0,.7);
+    width: 15rem;
+    height: 6rem;
+    border-radius: 1rem;
+}
+.alert_content >p{
+    text-align: center;
+}
+/*电影电视剧信息修改弹窗*/
+.movie_infoC{
+    color: black;
+    margin: 0.2rem 0 5rem 0;
+}
+.movie_infoC .detail{
+    margin: 1rem 0;
+}
+.movie_infoC .detail >i{
+    float: left;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.movie_infoC .detail >input{
+    outline: none;
+    border: none;
+    font-size: 1.8rem;
+
+    border-bottom: 1px solid #ccc;
+    width: 28rem;
+    max-width: 28.1rem;
+    overflow: hidden;
+}

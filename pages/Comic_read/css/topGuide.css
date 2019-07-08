@@ -1,0 +1,637 @@
+/*****
+--------------
+头部第一层导航
+--------------
+*****/
+header{
+    position:relative;
+    top: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 8rem;
+    background: black;
+}
+
+header .top_main{
+    width: 100%;
+    padding: 0;
+    background: rgba(0,0,0,.3);
+    border-bottom: 1px solid #393939;
+    height: 50%;
+    position: relative;
+}
+/*注册和登陆*/
+header .top_main .sign_in,header .top_main .sign_out{
+    font-weight: 700;
+    height:100%;
+    position: absolute;
+    left: 10%;
+    padding: 0 1%;
+    border-left: 1px solid #393939;
+    border-right: 1px solid #393939;
+    cursor: pointer;
+}
+header .top_main .sign_in:hover,header .top_main .sign_out:hover{
+    background: rgba(0,0,0,.6);
+}
+header .top_main .sign_in .sign_in_click i,header .top_main .sign_out .sign_out_click i{
+    font-size: 2vw;
+    line-height: 4rem;
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+header .sign_in_click,header .sign_out_click{
+    width: 100%;
+    position: relative;
+    line-height: 4rem;
+    color: #f1f1f1;
+}
+header .sign_in_click:hover + .sign_in_panel,header .sign_out_click:hover + .sign_out_panel{
+    display: block;
+}
+header .sign_in_panel:hover,header .sign_out_panel:hover{
+    display: block;
+}
+header .sign_in_panel,header .sign_out_panel{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 26rem;
+    height: 28rem;
+    background: rgba(0,0,0,.6);
+    display: none;
+    z-index: 9999;
+}
+header .sign_in_panel img{
+    position: absolute;
+    top: 10%;
+    left: 25.4%;
+    height: 18%;
+    width: auto;
+}
+header .sign_out_panel img:first-child{
+    position: absolute;
+    top: 10%;
+    left: 23%;
+    height: 23%;
+    width: auto;
+}
+header .sign_out_panel img:nth-of-type(2){
+    position: absolute;
+    top: 42%;
+    left: 22%;
+    border-radius: 50%;
+    height: 17%;
+    width: auto;
+}
+#person_id{
+    position: absolute;
+    top: 41%;
+    font-size: 1.4vw;
+    left: 41%;
+}
+#person_id:hover{
+    color: red;
+}
+.sign_out_panel span{
+    position: absolute;
+    bottom: 32%;
+    left: 27%;
+    font-size: 1vw;
+    color: rgba(255,0,0,.9)
+}
+header .sign_in_panel .sign_in_button{
+    display: inline-block;
+    background: white;
+    border-radius: 2vw;
+    color: black;
+    position: absolute;
+    top: 45%;
+    left: 19%;
+    width: 58%;
+    height: 2.5vw;
+    line-height: 2.7vw;
+    text-align: center;
+    font-size: 1.3vw;
+}
+header .sign_out_panel .sign_out_button{
+    display: inline-block;
+    background: white;
+    border-radius: 2vw;
+    color: black;
+    position: absolute;
+    top: 70%;
+    left: 19%;
+    width: 58%;
+    height: 2.5vw;
+    line-height: 2.7vw;
+    text-align: center;
+    font-size: 1.3vw;
+}
+header .sign_in_panel .sign_in_button:hover,header .sign_out_panel .sign_out_button:hover{
+    background-color: #cccccc;
+}
+header .sign_in_panel .create_id{
+    display: inline-block;
+    background: rgba(0,0,0,1);
+    border: 1px solid #cccccc;
+    border-radius: 2.5rem;
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 19%;
+    width: 58%;
+    height: 2.5vw;
+    line-height: 2.5vw;
+    text-align: center;
+    font-size: 1.26rem
+}
+header .sign_in_panel .create_id:hover{
+    border: 1px solid #666666;
+}
+header .top_main .LOGO{
+    display: block;
+    height: 100%;
+    width: 20%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+header .top_main .LOGO img{
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+header .top_main .search{
+    position: absolute;
+    right: 10%;
+    padding: 0 1rem;
+    height: 100%;
+    border-right: 1px solid #393939;
+    border-left: 1px solid #393939;
+    cursor: pointer;
+    top: 0;
+}
+header .top_guide{
+    width: 100%;
+    padding: 0;
+    background: rgba(0,0,0,.3);
+    height: 50%;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+}
+header .top_guide>ul{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+}
+header .top_guide>ul >li{
+    width: 25%;
+    text-align: center;
+    list-style: none;
+}
+header .top_guide>ul>li>a{
+    font-size: 1.4vw;
+    height: 100%;
+    line-height: 4rem;
+    text-decoration: none;
+    display: inline-block;
+    /* line-height: 1; */
+    padding: 0 1rem;
+    text-align: center;
+    cursor: pointer;
+    color: rgba(255,255,255,1);
+    font-weight: 700;
+    text-shadow: 0.01rem 0.01rem #666666, 0.02rem 0.02rem #666666, 0.025rem 0.025rem #666666, 0.05rem 0.05rem #666666, 0.1rem 0.1rem #666666, 0.15rem 0.15rem #666666, 2px 2px 1px #666666;
+}
+header .top_guide >ul >li:hover{
+    border-bottom: 4px solid red;
+    list-style: none;
+
+}
+header .top_guide .active{
+    background: rgba(0,0,0,0.5);
+    color: white;
+}
+header .top_guide_container{
+    height: 427px;
+    width: 60%;
+    left: 20%;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    display: none;
+    -webkit-border-radius: 0 0 1rem 1rem;
+    -moz-border-radius: 0 0 1rem 1rem;
+    border-radius: 0 0 .5rem .5rem;
+}
+.top_guide_content{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.top_guide_active{
+    display: block;
+}
+/*导航栏可以略缩看主要section*/
+.section{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.News {
+    background-image: url("../../top_guide_img/beijing.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.News .news_title{
+    width: 100%;
+    /* height: 20%; */
+    margin-top: 3%;
+    /* margin-bottom: -1%; */
+}
+.News .news_title span{
+    color: black;
+    display: inline-block;
+    position: absolute;
+}
+.News .news_title span:nth-of-type(1){
+    font-size: 1.5vw;
+    margin-top: -0.4rem;
+    font-weight: 600;
+    margin-left: 0.5%;
+    text-shadow: 0.001rem 0.001rem rgba(0,0,0,.3), 0.01rem 0.01rem rgba(0,0,0,.3), 0.05rem 0.05rem rgba(0,0,0,.3), 0.09rem 0.09rem rgba(0,0,0,.3), 0.1rem 0.1rem rgba(0,0,0,.3), 0.15rem 0.15rem rgba(0,0,0,.3), 0.2rem 0.2rem rgba(0,0,0,.3), 0.21rem 0.21rem rgba(0,0,0,.3);
+}
+.News .news_title span:nth-of-type(2){
+    font-weight: 700;
+    font-size: 2.9vw;
+    text-shadow: 0.05rem 0.05rem rgba(0,0,0,.9), 0.1rem 0.1rem rgba(0,0,0,.9), 0.15rem 0.15rem rgba(0,0,0,.9), 0.2rem 0.2rem rgba(0,0,0,.9), 0.25rem 0.25rem rgba(0,0,0,.9);
+    color: red;
+    margin: 5.3% 6%;
+    font-family: 微软雅黑;
+}
+.News .news_title span:nth-of-type(3){
+    background: black;
+    height: .7vw;
+    width: 90%;
+    margin: 0 8%;
+    margin-top: 1.7rem;
+    box-shadow: 1px 1px rgba(0,0,0,.3), 2px 2px rgba(0,0,0,.3), 3px 3px rgba(0,0,0,.3), 4px 4px rgba(0,0,0,.3), 5px 5px rgba(0,0,0,.3), 6px 6px rgba(0,0,0,.3);
+}
+.News .news_more{
+    position: absolute;
+    top: 19%;
+    right: 5%;
+    width: 9%;
+    height: 3rem;
+    background: rgba(0, 0, 0, 0.71);
+
+}
+.News .news_more a{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    line-height: 1.9;
+    color: rgba(255,255,255,.95);
+    font-weight: 900;
+}
+.News .news_lists{
+    width: 100%;
+    height: 70%;
+    margin-top: 14%;
+    z-index: 2;
+    color: black;
+}
+.News .news_lists ul{
+    width: 95%;
+    display:block;
+    margin: 0 auto;
+    height: 100%;
+}
+.News .news_lists li{
+    float: left;
+    margin: 0;
+    width: 25%;
+    padding: 0 0.9%;
+    height: 100%;
+}
+.News .news_lists li + li{
+    border-left: 1px solid rgba(0,0,0,.2);
+}
+.News .news_lists li img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 3px 3px 3px 3px;
+}
+.News .news_lists li a{
+    width: 100%;
+    /* height: 50%; */
+    display: block;
+    font-size: 1.1vw;
+}
+.News .news_lists li h3{
+    text-align: center;
+    font-size: .8vw;
+    font-weight: 700;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    color: rgba(0,0,0,.3);
+}
+.News .news_lists li .hot {
+    color: red;
+}
+.News .news_lists li a:nth-of-type(2){
+    color: rgba(0,0,0,0.9);
+    height: 40%;
+}
+.News .news_lists li p{
+    margin-top: .5vw;
+    font-weight: 700;
+    height: 99%;
+    max-height: 100%;
+}
+.News .news_lists li p:hover{
+    color: rgba(255,0,0,.9);
+}
+.News .news_lists li h4{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #666666;
+    font-size: .7vw;
+}
+/*新闻部分结束*/
+/*-----------*/
+/*漫画部分开始*/
+/*-----------*/
+.Read_Comics{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../top_guide_img/comic/background_img.jpg");
+    background-size: 100%;
+    position: relative;
+}
+.Read_Comics .comic_title{
+    background: rgba(0,0,0,.9);
+    width: 100%;
+    height: 3.9rem;
+    position: absolute;
+    bottom: 0;
+}
+.Read_Comics .comic_title .comic_background{
+    background-image: url("../../top_guide_img/comic/comic_title_background.jpg");
+    background-size: 100%;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 10%;
+}
+.Read_Comics .comic_title .comic_sub_title{
+    margin-left: 33%;
+    height: 100%;
+}
+.Read_Comics .comic_sub_title a,.Read_Comics .comic_sub_title p,.Read_Comics .comic_sub_title h3{
+    float: left;
+    margin: 0.5rem 0.8rem;
+    padding: 0;
+    line-height: 3.5rem;
+}
+.Read_Comics .comic_sub_title h3{
+    color: white;
+}
+.comic_sub_title p{
+    font-size: 1vw;
+}
+.comic_sub_title a{
+    color: rgba(255,0,0,.8);
+    font-weight: 700;
+}
+.Read_Comics .comic_read{
+    width: 100%;
+    margin-top: 2%;
+}
+.Read_Comics .comic_read ul{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.Read_Comics .comic_read ul li{
+    float: left;
+    margin: 0;
+    width: 25%;
+    padding: 0 1.3rem;
+    transition: 0.8s;
+    overflow: hidden;
+}
+.Read_Comics .comic_read ul li a{
+    width: 100%;
+    display: block;
+}
+.Read_Comics .comic_read ul li a img{
+    border-radius: .5rem;
+    width: 100%;
+    transition: 1s;
+}
+.Read_Comics .comic_read ul li a h3,.Read_Comics .comic_read ul li a span{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.Read_Comics .comic_read ul li a h3{
+    font-size: 1.3vw;
+    color: rgba(255,255,255,1);
+    width: 100%;
+    background: rgba(0,0,0,.25);
+    /*border-radius: 1rem;*/
+    text-align: center;
+}
+.Read_Comics .comic_read ul li a span{
+    /*display: inline;*/
+    color: rgba(255,255,255,.7);
+    text-align: center;
+    width: 100%;
+    font-size: 1.2vw;
+}
+.Read_Comics .comic_read ul li a:hover img{
+    -webkit-transform: translateY(-.5rem);
+    -moz-transform: translateY(-.5rem);
+    -ms-transform: translateY(-.5rem);
+    -o-transform: translateY(-.5rem);
+    transform: translateY(-.5rem);
+}
+.Read_Comics .comic_read ul li a:hover h3{
+    color: rgba(255,0,0,0.9);
+}
+/*漫画部分结束*/
+/*TV shows 部分*/
+.TV_Shows .shows_main{
+    width: 100%;
+    height: 100%;
+    background: url("../../top_guide_img/shows/main.jpg") no-repeat;
+    background-size: 100%;
+
+}
+.TV_Shows .shows_main .shows_title{
+    width: 100%;
+}
+.TV_Shows .shows_main .shows_title h2{
+    display: block;
+    padding: 1.2rem;
+    text-align: center;
+    margin: 0 auto;
+    color: whitesmoke;
+    font-size: 2.5vw;
+}
+.TV_Shows .shows_main .shows_title p{
+    display: block;
+    font-size: 1vw;
+    text-align: center;
+    color: floralwhite;
+}
+.TV_Shows .shows_main .shows_title a{
+    display: block;
+    color: white;
+    text-align: center;
+    color: rgba(255,255,255,.8);
+    height: 3.4rem;
+    line-height: 3.4rem;
+    margin: 2.3% auto 0;
+    width: 11%;
+    font-size: 0.9vw;
+    font-weight: 700;
+    border: 1px solid rgba(0,0,1,5);
+    border-radius: .5rem;
+    background-color: rgba(0,0,0,0.89);
+}
+.TV_Shows .shows_main .shows_title a:hover{
+    background-color: rgba(0,0,0,.1);
+    color: white;
+}
+.TV_Shows .shows_watch{
+    width: 80%;
+    height: 65%;
+    margin: -30.8% auto 0;
+    color: red;
+    z-index: 2;
+}
+.TV_Shows .shows_watch ul{
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 0.6% 0.1% 0;
+    border-radius: 0.4rem;
+}
+.TV_Shows .shows_watch ul li{
+    display: inline-block;
+    width: 18.7%;
+    height: 100%;
+    margin: 0 0.34%;
+}
+
+.TV_Shows .shows_watch ul li a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+.TV_Shows.active .shows_watch ul li a:hover h3{
+    color: rgba(224,0,0,0.9);
+}
+.TV_Shows .shows_watch >ul >li >a> img{
+    width: 100%;
+}
+.TV_Shows .shows_watch >ul >li >a> img{
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    transition: .5s;
+    border-radius: .3rem;
+}
+.TV_Shows .shows_watch >ul >li >a h3{
+    font-size: 1.1vw;
+    color: rgba(0,0,0,.9);
+    margin: 0;
+    padding: 0;
+}
+.TV_Shows .shows_watch ul >li >a >span{
+    font-size: .9vw;
+    color: #666655;
+    font-weight: 200;
+}
+/*电视剧导航部分结束*/
+/*电影导航部分开始*/
+.Movie_guide{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../top_guide_img/movie/m_background.jpg");
+    background-size: 100%;
+}
+.Movie_guide > ul{
+    width: 100%;
+    height: 67%;
+    padding: 1rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 8%;
+    background: rgba(0,0,0,0.35);
+}
+.Movie_guide > ul>li{
+    width: 17%;
+    margin: 0 1%;
+    display: inline-block;
+    list-style: none;
+}
+.Movie_guide > ul>li>a{
+    color: white;
+}
+.Movie_guide > ul>li>a>img{
+    width: 100%;
+}
+.Movie_guide > ul>li>a>span{
+    display: block;
+    text-align: center;
+    font-size: 1.2vw;
+}
+.movie_detail>a{
+    color: white;
+    float: left;
+}
+.movie_detail>span{
+    color: red;
+}
+.Movie_guide>a{
+    display: block;
+    font-size: 1.1vw;
+    height: 5.3rem;
+    line-height: 5.3rem;
+    border-radius: 50%;
+    width: 5.3rem;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    background: #000000a8;
+    text-align: center;
+}
+.Movie_guide>a:hover{
+    background: #ff0000a8;
+}
+.block-stars {
+    float: right;
+    font-size: 1vw;
+}
+ul.w3l-ratings li,.w3l-ratings a{
+    display: inline-block!important;
+    list-style: none;
+}
+ul.w3l-ratings li i ,.w3l-ratings a i{
+    color: #ff0000;
+}

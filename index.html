@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--统一视口宽度 缩放比例-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--本界面在IE浏览器下的兼容模式-->
+    <title>Marvel粉丝网</title>
+    <link rel="stylesheet" href="css/tools.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="font-awesome.css/font-awesome.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!--<script src="js/jquery.fullPage.js"></script>-->
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/movie.css">
+</head>
+<body>
+<!--[if lte IE8>
+<p class="browserupgrade">您的浏览器版本太低，请到<a href="http://browsehappy.com">这里</a>更新</p>
+<![endif]-->
+<header id="header">
+    <div class="top_main">
+        <div class="sign_in">
+            <div class="sign_in_click">
+                <i class="fa fa-sign-in fa-fw"></i>
+            </div>
+            <div class="sign_in_panel" id="sign_in_panel">
+                <img src="img/LOGO.jpg" alt="">
+                <a href="" class="sign_in_button">SIGN IN</a>
+                <a href="" class="create_id">CREATE AN ACCOUNT</a>
+            </div>
+        </div>
+        <a href="index.html" class="LOGO"><img src="img/LOGO.jpg" alt=""></a>
+
+    </div>
+    <div class="top_guide">
+        <ul id="top_guide" class="top_guide_menu">
+            <li data-menuanchor="Universe" class="active"><a href="#Home">Home</a></li>
+            <li data-menuanchor="News"><a href="#News">News</a></li>
+            <li data-menuanchor="Comics"><a href="#Comics">Read Comics</a></li>
+            <li data-menuanchor="TV"><a href="#TV">TV Shows</a></li>
+            <li data-menuanchor="Movies"><a href="#Movies">Movies</a></li>
+        </ul>
+    </div>
+</header>
+<div class="contain">
+    <!--HOME幻灯片区域-->
+    <div class="section Home active">
+        <div class="fp-slide"><img src="img/1.jpg" alt=""></div>
+        <div class="fp-slide"><img src="img/2.jpg" alt=""></div>
+        <div class="fp-slide active"><img src="img/3.jpg" alt=""></div>
+        <div class="fp-slide"><img src="img/4.jpg" alt=""></div>
+        <div class="fp-slide"><img src="img/5.jpg" alt=""></div>
+        <div class="fp-slide"><img src="img/6.jpg" alt=""></div>
+        <div class="fp-slide"><img src="img/7.jpg" alt=""></div>
+    </div>
+    <!--新闻区域-->
+    <div class="section News">
+        <div class="news_title">
+            <span>LASTED</span>
+            <span>NEWS!</span>
+            <span></span>
+        </div>
+        <div class="news_more wrapper">
+            <a href="pages/News/News.html">MORE..</a>
+        </div>
+        <div class="news_lists">
+            <ul >
+                <li>
+                    <a href=""><img src="img/news/1.png" alt="" class="effect"></a>
+                    <h3>COMICS</h3>
+                    <a href="">
+                        <p>This Week in Marvel Visits MoPOP's Marvel Exhibit and Gets a Look at the Creation of Comics</p>
+                    </a>
+                    <h4>2 Days ago</h4>
+                </li>
+                <li>
+                    <a href=""><img src="img/news/2.jpg" alt="" class="effect"></a>
+                    <h3 class="hot">MOVIES:Spider Man II</h3>
+                    <a href="">
+                        <p>Welcome our new friend——spider man</p>
+                    </a>
+                    <h4>4 Days ago</h4>
+                </li>
+                <li>
+                    <a href=""><img src="img/news/1.png" alt="" class="effect"></a>
+                    <h3>COMICS</h3>
+                    <a href="">
+                        <p>Bryan Edward Hill Reveals the Tech World of the Upcoming 'What If? X-Men'</p>
+                    </a>
+                    <h4>2 Days ago</h4>
+                </li>
+                <li>
+                    <a href=""><img src="img/news/2.jpg" alt="" class="effect"></a>
+                    <h3>COMICS</h3>
+                    <a href="">
+                        <p>Bryan Edward Hill Reveals the Tech World of the Upcoming 'What If? X-Men'</p>
+                    </a>
+                    <h4>A Week ago</h4>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--漫画区域-->
+    <div class="section Read_Comics">
+        <div class="comic_read">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="img/comic/comic_book/1.jpg" alt="">
+                        <h3>Fantastic Four</h3>
+                        <span>2018</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/comic/comic_book/2.jpg" alt="">
+                        <h3>Iceman</h3>
+                        <span>2018</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/comic/comic_book/3.jpg" alt="">
+                        <h3>Infinity Wars</h3>
+                        <span>2018</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/comic/comic_book/4.jpg" alt="">
+                        <h3>Star Wars:The Last Jedi Adaptation</h3>
+                        <span>2018</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/comic/comic_book/5.jpg" alt="">
+                        <h3>Journey Into Mystery:The Birth of Krakoa</h3>
+                        <span>2018</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/comic/comic_book/6.jpg" alt="">
+                        <h3>Marvel Rising:Omega</h3>
+                        <span>2018</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="comic_title">
+            <div class="comic_background"></div>
+            <div class="comic_sub_title">
+                <p>MARVEL UNLIMITED</p>
+                <h3>ENJOY THE COMIC</h3>
+                <a href="pages/Comic/Comic.html" target="_blank">READ MORE</a>
+            </div>
+
+
+        </div>
+    </div>
+    <!--电视剧区域-->
+    <div class="section TV_Shows">
+        <div class="shows_main">
+            <div class="shows_title">
+                <h2>TV SHOWS</h2>
+                <p>EXPLORE THE CHARACTERS AND STORIES THAT SHAPE MARVEL TV!</p>
+                <a href="pages/Movies/movie.html#Latest-tv-series" target="_blank">Watch More..</a>
+            </div>
+        </div>
+        <div class="shows_watch">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="img/shows/shows1.jpg" alt="">
+                        <h3>Marvel's Iron Fist I Season 2</h3>
+                        <span>SEP 7.2018</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/shows/shows2.jpg" alt="">
+                        <h3>Marvel's Luke Cage I Season 2</h3>
+                        <span>2018</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/shows/shows3.jpg" alt="">
+                        <h3>Marvel's Jessica Jones I Season 2</h3>
+                        <span>2018</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/shows/shows4.jpg" alt="">
+                        <h3>Marvel's Cloak & Dagger I Season 1</h3>
+                        <span>2018</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/shows/shows6.jpg" alt="">
+                        <h3>Marvel's Iron Fist I Season 2</h3>
+                        <span>SEP 7.2018</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/shows/shows5.jpg" alt="">
+                        <h3>Marvel's Iron Fist I Season 2</h3>
+                        <span>SEP 7.2018</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--电影区域-->
+    <div class="section Movies">
+        <div id="m_movie">
+            <div class="m_logo">
+                <span></span>
+                <a href="pages/Movies/movie.html" target="_blank"><img src="img/漫威影业LOGO.jpg" alt=""></a>
+                <span></span>
+            </div>
+            <div class="m_contwrap">
+                <div class="m_movietitle">
+                    <h2>Movie Guidance</h2>
+                </div>
+            </div>
+            <div class="m_moviecont">
+                <div class="m_contwrap">
+                    <ul class="m_moviejd clearfix">
+                        <li class="cur">STAGE I</li>
+                        <li>STAGE II</li>
+                        <li>STAGE III</li>
+                        <li>STAGE IV</li>
+                    </ul>
+                    <div class="gtx">
+                        <div class="gz">
+                            <p>《钢铁侠》</p>
+                            <nav>
+                                <img src="img/video_pic01.jpg" title="视频" />
+                                <span>▶</span>
+                            </nav>
+                            <p>《钢铁侠》中文版预告片125秒</p>
+                        </div>
+                        <div class="gy">
+                            <p class="gb">x</p>
+                            <p>剧情</p>
+                            <p>改编自“漫威漫画”中的经典故事，讲述了工业家及发明家托尼·斯塔克遭阴谋绑架，被迫制造最致命的武器，身受重伤的他却暗中制造了一套高科技盔甲，保护自己逃生，从此变身“钢铁侠”保卫地球。
+                                <span>更多 >></span></p>
+                            <p>演职员表</p>
+                            <p>
+                                <img src="img/video_pic02.jpg" />
+                                <img src="img/video_pic03.jpg" />
+                                <img src="img/video_pic04.jpg" />
+                                <img src="img/video_pic05.jpg" />
+                                <img src="img/video_pic06.jpg" />
+                            </p>
+                            <p>高 清 剧 照</p>
+                            <p>
+                                <a href="http://movie.mtime.com/24130/posters_and_images/515268/" target="_blank">
+                                    <img src="img/video_pic07.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/24130/posters_and_images/618587/" target="_blank">
+                                    <img src="img/video_pic08.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/24130/posters_and_images/624084/" target="_blank">
+                                    <img src="img/video_pic09.jpg" title="图" />
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gtx">
+                        <div class="gz">
+                            <p>《无敌浩克》</p>
+                            <nav>
+                                <img src="img/video_pic10.jpg" title="视频" />
+                                <span>▶</span>
+                            </nav>
+                            <p>《无敌浩克》中文版超长预告片</p>
+                        </div>
+                        <div class="gy">
+                            <p class="gb">x</p>
+                            <p>剧情</p>
+                            <p>影片讲述布鲁斯·班纳一方面要躲避军方的追捕，另一方面也在寻求控制愤怒的方法，同时还要面对一股强大邪恶势力的威胁……<span>更多 >></span></p>
+                            <p>演职员表</p>
+                            <p>
+                                <img src="img/video_pic11.jpg" />
+                                <img src="img/video_pic12.jpg" />
+                                <img src="img/video_pic13.jpg" />
+                                <img src="img/video_pic14.jpg" />
+                                <img src="img/video_pic15.jpg" />
+
+                            </p>
+                            <p>高 清 剧 照</p>
+                            <p>
+                                <a href="http://movie.mtime.com/51007/posters_and_images/701669/" target="_blank">
+                                    <img src="img/video_pic16.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/51007/posters_and_images/1770063/" target="_blank">
+                                    <img src="img/video_pic17.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/51007/posters_and_images/701629/" target="_blank">
+                                    <img src="img/video_pic18.jpg" title="图" />
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gtx">
+                        <div class="gz">
+                            <p>《钢铁侠2》</p>
+                            <nav>
+                                <img src="img/video_pic19.jpg" title="视频" />
+                                <span>▶</span>
+                            </nav>
+                            <p>《钢铁侠2》中文版预告片</p>
+                        </div>
+                        <div class="gy">
+                            <p class="gb">x</p>
+                            <p>剧情</p>
+                            <p>剧情发生在托尼公布自己“钢铁侠”身份的六个月后，这带来了意想不到的连锁反应，他与周围人的关系发生了改变，他亲近的人也成为敌人的报复对象。
+                                <span>更多 >></span></p>
+                            <p>演职员表</p>
+                            <p>
+                                <img src="img/video_pic20.jpg" />
+                                <img src="img/video_pic21.jpg" />
+                                <img src="img/video_pic22.jpg" />
+                                <img src="img/video_pic23.jpg" />
+                                <img src="img/video_pic24.jpg" />
+                                <img src="img/video_pic25.jpg" />
+                            </p>
+                            <p>高 清 剧 照</p>
+                            <p>
+                                <a href="http://movie.mtime.com/83329/posters_and_images/1355926/" target="_blank">
+                                    <img src="img/video_pic26.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/83329/posters_and_images/1363240/" target="_blank">
+                                    <img src="img/video_pic27.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/83329/posters_and_images/1355924/" target="_blank">
+                                    <img src="img/video_pic28.jpg" title="图" />
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gtx">
+                        <div class="gz">
+                            <p>《雷神》</p>
+                            <nav>
+                                <img src="img/video_pic29.jpg" title="视频" />
+                                <span>▶</span>
+                            </nav>
+                            <p>《雷神》中文版预告片</p>
+                        </div>
+                        <div class="gy">
+                            <p class="gb">x</p>
+                            <p>剧情</p>
+                            <p>故事的中心人物是拥有强大神力的雷神Thor因他自大鲁莽的行为被贬入凡间，被迫与人类一同生活。Thor必须学会如何成为一个真正的英雄，才能对抗来自神界的强大黑暗势力。<span>更多 >></span></p>
+                            <p>演职员表</p>
+                            <p>
+                                <img src="img/video_pic30.jpg" />
+                                <img src="img/video_pic31.jpg" />
+                                <img src="img/video_pic32.jpg" />
+                                <img src="img/video_pic33.jpg" />
+                                <img src="img/video_pic34.jpg" />
+                                <img src="img/video_pic35.jpg" />
+                            </p>
+                            <p>高 清 剧 照</p>
+                            <p>
+                                <a href="http://movie.mtime.com/83330/posters_and_images/1747881/" target="_blank">
+                                    <img src="img/video_pic36.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/83330/posters_and_images/1747883/" target="_blank">
+                                    <img src="img/video_pic37.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/83330/posters_and_images/1477975/" target="_blank">
+                                    <img src="img/video_pic38.jpg" title="图" />
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gtx">
+                        <div class="gz">
+                            <p>《美国队长》</p>
+                            <nav>
+                                <img src="img/video_pic39.jpg" title="视频" />
+                                <span>▶</span>
+                            </nav>
+                            <p>《美国队长》中文版预告片</p>
+                        </div>
+                        <div class="gy">
+                            <p class="gb">x</p>
+                            <p>剧情</p>
+                            <p>讲述二战时期，被注射了超级士兵血清的美国青年斯蒂夫拥有了人类最完美躯体。斯蒂夫被任命为美国队长，他带着坚不可摧的盾牌和深谙战术的头脑，向纳粹党的九头蛇军团宣战。
+                                <span>更多 >></span></p>
+                            <p>演职员表</p>
+                            <p>
+                                <img src="img/video_pic40.jpg" />
+                                <img src="img/video_pic41.jpg" />
+                                <img src="img/video_pic41.jpg" />
+                                <img src="img/video_pic43.jpg" />
+                                <img src="img/video_pic44.jpg" />
+                                <img src="img/video_pic45.jpg" />
+                            </p>
+                            <p>高 清 剧 照</p>
+                            <p>
+                                <a href="http://movie.mtime.com/65350/posters_and_images/1889543/" target="_blank">
+                                    <img src="img/video_pic46.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/65350/posters_and_images/1795865/" target="_blank">
+                                    <img src="img/video_pic47.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/65350/posters_and_images/1734831/" target="_blank">
+                                    <img src="img/video_pic48.jpg" title="图" />
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gtx">
+                        <div class="gz">
+                            <p>《复仇者联盟》</p>
+                            <nav>
+                                <img src="img/video_pic49.jpg" title="视频" />
+                                <span>▶</span>
+                            </nav>
+                            <p>《复仇者联盟》中文剧场版预告片</p>
+                        </div>
+                        <div class="gy">
+                            <p class="gb">x</p>
+                            <p>剧情</p>
+                            <p>片中讲述神盾局指挥官尼克·弗瑞为了对付《雷神》中被流放的洛基，将钢铁侠、美国队长、雷神托尔、绿巨人、黑寡妇和鹰眼侠六位超级英雄集结在一起，成立了“复仇者联盟”，共同抗敌。<span>更多 >></span></p>
+                            <p>演职员表</p>
+                            <p>
+                                <img src="img/video_pic50.jpg" />
+                                <img src="img/video_pic51.jpg" />
+                                <img src="img/video_pic52.jpg" />
+                                <img src="img/video_pic53.jpg" />
+                                <img src="img/video_pic54.jpg" />
+                                <img src="img/video_pic55.jpg" />
+                            </p>
+                            <p>高 清 剧 照</p>
+                            <p>
+                                <a href="http://movie.mtime.com/83336/posters_and_images/1909658/" target="_blank">
+                                    <img src="img/video_pic56.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/83336/posters_and_images/2091769/" target="_blank">
+                                    <img src="img/video_pic57.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/83336/posters_and_images/2024896/" target="_blank">
+                                    <img src="img/video_pic58.jpg" title="图" />
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gtx">
+                        <div class="gz">
+                            <p>《钢铁侠3》</p>
+                            <nav>
+                                <img src="img/video_pic59.jpg" title="视频" />
+                                <span>▶</span>
+                            </nav>
+                            <p>《钢铁侠3》中国版剧场预告片</p>
+                        </div>
+                        <div class="gy">
+                            <p class="gb">x</p>
+                            <p>剧情</p>
+                            <p>故事时间发生在《复仇者联盟》纽约大战结束半年之后，托尼·斯塔克的生活被强敌毁灭殆尽，无路可退的他必须依靠精良的高科技装备以及过人才智，保护自己和身边最亲近的人。<span>更多 >></span></p>
+                            <p>演职员表</p>
+                            <p>
+                                <img src="img/video_pic60.jpg" />
+                                <img src="img/video_pic61.jpg" />
+                                <img src="img/video_pic62.jpg" />
+                                <img src="img/video_pic63.jpg" />
+                                <img src="img/video_pic64.jpg" />
+                                <img src="img/video_pic65.jpg" />
+                            </p>
+                            <p>高 清 剧 照</p>
+                            <p>
+                                <a href="http://movie.mtime.com/91881/posters_and_images/2197578/" target="_blank">
+                                    <img src="img/video_pic66.jpg" title="图" />
+                                </a>
+                                <a href="httsp://movie.mtime.com/91881/posters_and_images/2197582/" target="_blank">
+                                    <img src="img/video_pic67.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/91881/posters_and_images/2198029/" target="_blank">
+                                    <img src="img/video_pic68.jpg" title="图" />
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gtx">
+                        <div class="gz">
+                            <p>《雷神2：黑暗世界》</p>
+                            <nav>
+                                <img src="img/video_pic79.jpg" title="视频" />
+                                <span>▶</span>
+                            </nav>
+                            <p>《雷神2：黑暗世界》中文剧场版预告片</p>
+                        </div>
+                        <div class="gy">
+                            <p class="gb">x</p>
+                            <p>剧情</p>
+                            <p>时间发生在《复仇者联盟》纽约大战结束一年后，雷神托尔押送着弟弟洛基回到仙宫接受审判，此时一股强大的远古黑暗势力正在一步步逼近。<span>更多 >></span></p>
+                            <p>演职员表</p>
+                            <p>
+                                <img src="img/video_pic80.jpg" />
+                                <img src="img/video_pic81.jpg" />
+                                <img src="img/video_pic82.jpg" />
+                                <img src="img/video_pic83.jpg" />
+                                <img src="img/video_pic84.jpg" />
+                                <img src="img/video_pic85.jpg" />
+                            </p>
+                            <p>高 清 剧 照</p>
+                            <p>
+                                <a href="http://movie.mtime.com/150658/posters_and_images/2346786/" target="_blank">
+                                    <img src="img/video_pic86.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/150658/posters_and_images/2352626/" target="_blank">
+                                    <img src="img/video_pic87.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/150658/posters_and_images/2323751/" target="_blank">
+                                    <img src="img/video_pic88.jpg" title="图" />
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gtx">
+                        <div class="gz">
+                            <p>《美国队长2：冬日战士》</p>
+                            <nav>
+                                <img src="img/video_pic89.jpg" title="视频" />
+                                <span>▶</span>
+                            </nav>
+                            <p>《美国队长2：冬日战士》中文剧场版预告片</p>
+                        </div>
+                        <div class="gy">
+                            <p class="gb">x</p>
+                            <p>剧情</p>
+                            <p>故事时间发生在纽约大战两年后，美国队长已经定居华盛顿。然而当一起神秘袭击事件伤害到神盾局的重要人物时，他必须重新出马，和黑寡妇一起找出幕后真凶。<span>更多 >></span></p>
+                            <p>演职员表</p>
+                            <p>
+                                <img src="img/video_pic90.jpg" />
+                                <img src="img/video_pic91.jpg" />
+                                <img src="img/video_pic92.jpg" />
+                                <img src="img/video_pic93.jpg" />
+                                <img src="img/video_pic94.jpg" />
+                                <img src="img/video_pic95.jpg" />
+                            </p>
+                            <p>高 清 剧 照</p>
+                            <p>
+                                <a href="http://movie.mtime.com/151951/posters_and_images/2391149/" target="_blank">
+                                    <img src="img/video_pic96.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/151951/posters_and_images/2595849/" target="_blank">
+                                    <img src="img/video_pic97.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/151951/posters_and_images/2391151/" target="_blank">
+                                    <img src="img/video_pic98.jpg" title="图" />
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gtx">
+                        <div class="gz">
+                            <p>《银河护卫队》</p>
+                            <nav>
+                                <img src="img/video_pic69.jpg" title="视频" />
+                                <span>▶</span>
+                            </nav>
+                            <p>《银河护卫队》中文版终极预告片</p>
+                        </div>
+                        <div class="gy">
+                            <p class="gb">x</p>
+                            <p>剧情</p>
+                            <p>讲述因偷走神秘球体而被疯狂追杀的“星爵”被迫结盟四个格格不入的乌合之众：火箭浣熊、树人格鲁特、卡魔拉及毁灭者德拉克斯，他们必须破釜沉舟决一死战，才可能拯救整个银河系。<span>更多 >></span></p>
+                            <p>演职员表</p>
+                            <p>
+                                <img src="img/video_pic70.jpg" />
+                                <img src="img/video_pic71.jpg" />
+                                <img src="img/video_pic72.jpg" />
+                                <img src="img/video_pic73.jpg" />
+                                <img src="img/video_pic74.jpg" />
+                                <img src="img/video_pic75.jpg" />
+                            </p>
+                            <p>高 清 剧 照</p>
+                            <p>
+                                <a href="http://movie.mtime.com/175195/posters_and_images/2395558/" target="_blank">
+                                    <img src="img/video_pic76.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/175195/posters_and_images/6928473/" target="_blank">
+                                    <img src="img/video_pic77.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/175195/posters_and_images/6901453/" target="_blank">
+                                    <img src="img/video_pic78.jpg" title="图" />
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gtx">
+                        <div class="gz">
+                            <p>《复仇者联盟2：奥创纪元》</p>
+                            <nav>
+                                <img src="img/video_pic.jpg" title="视频" />
+                                <span>▶</span>
+                            </nav>
+                            <p>《复仇者联盟2：奥创纪元》中文版预告片</p>
+                        </div>
+                        <div class="gy">
+                            <p class="gb">x</p>
+                            <p>剧情</p>
+                            <p>身经百战的超级英雄们产生了职业倦怠，已经卸下钢铁战甲的托尼·斯塔克因此发明了“奥创”——有自我意识、有学习能力的人工智能机器人，并将指挥机器人军团的重任交给奥创。<span>更多 >></span></p>
+                            <p>演职员表</p>
+                            <p>
+                                <img src="img/video_pic100.jpg" />
+                                <img src="img/video_pic101.jpg" />
+                                <img src="img/video_pic102.jpg" />
+                                <img src="img/video_pic103.jpg" />
+                                <img src="img/video_pic104.jpg" />
+                                <img src="img/video_pic105.jpg" />
+                            </p>
+                            <p>高 清 剧 照</p>
+                            <p>
+                                <a href="http://movie.mtime.com/173060/posters_and_images/6906451/" target="_blank">
+                                    <img src="img/video_pic106.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/173060/posters_and_images/6906454/" target="_blank">
+                                    <img src="img/video_pic107.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/173060/posters_and_images/6952811/" target="_blank">
+                                    <img src="img/video_pic108.jpg" title="图" />
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gtx">
+                        <div class="gz">
+                            <p>《蚁人》</p>
+                            <nav>
+                                <img src="img/video_pic113.jpg" title="视频" />
+                                <span>▶</span>
+                            </nav>
+                            <p>《蚁人》中文版剧场预告片</p>
+                        </div>
+                        <div class="gy">
+                            <p class="gb">x</p>
+                            <p>剧情</p>
+                            <p>职业骗子斯科特拥有身体变小力量，他必须接受帮助他的导师，生化学家汉克保护他所发明的蚁人战服。在强大的敌人威胁下，皮姆与朗必须策划一场惊天骗局来拯救世界。<span>更多 >></span></p>
+                            <p>演职员表</p>
+                            <p>
+                                <img src="img/video_pic109.jpg" />
+
+                            </p>
+                            <p>高 清 剧 照</p>
+                            <p>
+                                <a href="http://movie.mtime.com/57903/posters_and_images/7026256/" target="_blank">
+                                    <img src="img/video_pic110.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/57903/posters_and_images/6994626/" target="_blank">
+                                    <img src="img/video_pic111.jpg" title="图" />
+                                </a>
+                                <a href="http://movie.mtime.com/57903/posters_and_images/6994625/" target="_blank">
+                                    <img src="img/video_pic112.jpg" title="图" />
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <ul class="m_movieone m_movienr" style="display:block">
+                        <li class="m_movie01">
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                            <h2 class="mmmm">Iron Man I</h2>
+                            <p class="m_day">2008.4.30</p>
+                        </li>
+                        <li class="m_movie02">
+                            <p class="m_day">2008.8.20</p>
+                            <h2 class="mmmm">Hulk</h2>
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic02.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                        </li>
+                        <li class="m_movie03">
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic03.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                            <h2 class="mmmm">Iron Man II</h2>
+                            <p class="m_day">2010.4.25</p>
+                        </li>
+                        <li class="m_movie04">
+                            <p class="m_day">2011.5.2</p>
+                            <h2 class="mmmm">Thor I</h2>
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic04.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                        </li>
+                        <li class="m_movie05">
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic05.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                            <h2 class="mmmm">Captain America I</h2>
+                            <p class="m_day">2011.7.19</p>
+                        </li>
+                        <li class="m_movie06">
+                            <p class="m_day">2012.5.4</p>
+                            <h2 class="mmmm">The Avenger I</h2>
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic06.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                        </li>
+                    </ul>
+                    <ul class="m_movietwo m_movienr" style="display:none">
+                        <li class="m_movie01" >
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic07.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                            <h2 class="mmmm">Iron Man III</h2>
+                            <p class="m_day">2013.5.1</p>
+                        </li>
+                        <li class="m_movie02">
+                            <p class="m_day">2013.11.8</p>
+                            <h2 class="mmmm">Thor II:The Dark World</h2>
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic08.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                        </li>
+                        <li class="m_movie03">
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic09.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                            <h2 class="mmmm">Captain America II</h2>
+                            <p class="m_day">2014.4.4</p>
+                        </li>
+                        <li class="m_movie04">
+                            <p class="m_day">2014.10.10</p>
+                            <h2 class="mmmm">Guardians of the Galaxy I</h2>
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic10.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                        </li>
+                        <li class="m_movie05">
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic11.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                            <h2 class="mmmm">The Avenger II</h2>
+                            <p class="m_day">2015.5.12</p>
+                        </li>
+                        <li class="m_movie06">
+                            <p class="m_day">2015.7.17</p>
+                            <h2 class="mmmm">Ant Man I</h2>
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic12.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                        </li>
+                    </ul>
+                    <ul class="m_moviethree m_movienr" style="display:none;">
+                        <li class="m_movie01" data-pop="1">
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic13.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                            <h2 class="mmmm">Captain America III</h2>
+                            <p class="m_day">2016.5.6</p>
+                        </li>
+                        <li class="m_movie02" data-pop="1">
+                            <p class="m_day">2016.11.4</p>
+                            <h2 class="mmmm">Doc.Strange</h2>
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic14.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                        </li>
+                        <li class="m_movie03" data-pop="1">
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic15.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                            <h2 class="mmmm">Guardians II</h2>
+                            <p class="m_day">2017.5.5</p>
+                        </li>
+                        <li class="m_movie04" data-pop="1">
+                            <p class="m_day">2017.7.7</p>
+                            <h2 class="mmmm">Spider Man I</h2>
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic15.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                        </li>
+                        <li class="m_movie05" data-pop="1">
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic16.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                            <h2 class="mmmm">Thor III</h2>
+                            <p class="m_day">2017.11.3</p>
+                        </li>
+                        <li class="m_movie06" data-pop="1">
+                            <p class="m_day">2018.7.6</p>
+                            <h2 class="mmmm">Black Panther</h2>
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic17.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                        </li>
+
+
+                    </ul>
+                    <ul class="m_moviefour m_movienr" style="display:none;">
+                        <li class="m_movie01" data-pop="1">
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic18.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                            <h2 class="mmmm">The Avenger III</h2>
+                            <p class="m_day">2018.5.4</p>
+                        </li>
+                        <li class="m_movie02" data-pop="1">
+                            <p class="m_day">2018.7.6</p>
+                            <h2 class="mmmm">Ant Man II</h2>
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic19.png" width="147" height="149" alt="图片" alt="图片" /></a>
+
+                        </li>
+                        <li class="m_movie03" data-pop="1">
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic20.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                            <h2 class="mmmm">Captain Marvel</h2>
+                            <p class="m_day">2019.3.8</p>
+                        </li>
+                        <li class="m_movie04" data-pop="1">
+                            <p class="m_day">2019.5.3</p>
+                            <h2 class="mmmm">The Avenger III part II</h2>
+                            <a href="javascript:;" class="m_movietx"><img src="img/movie_pic21.png" width="147" height="149" alt="图片" alt="图片" /></a>
+                        </li>
+                    </ul>
+                    <!--<div class="m_next" data-target="m_watch">-->
+                    <!--<a name="watch"></a>-->
+                    <!--</div>-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+<script>
+    $(function(){
+        $('.contain').fullpage({
+            navigation: true,
+            resize:false,//字体不随窗口变化
+            anchors: ['Home','News','Comics','TV','Movies'],
+            menu: '.top_guide_menu',
+            navigationTooltips: ['Home','News','Comics','TV','Movies'],
+            verticalCentered:false, //垂直居中
+            controlArrows: false,//定义是否通过箭头来控制slide,默认true
+            css3: true,
+            loopHorizontal: true,
+            continuousVertical:true,
+            slidesNavigation: false,//是否显示横向幻灯片的导航，默认为false
+            slidesNavPosition: 'bottom',//横向导航的位置，默认为bottom，可以设置为top或bottom
+        });
+        setInterval(function(){
+            $('.Marvel_Universe .active').fullpage.moveSlideRight();
+        },4500);
+
+
+    });
+</script>
+</body>
+</html>

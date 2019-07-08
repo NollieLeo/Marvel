@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>comic_main</title>
+    <link rel="stylesheet" href="CSS/comic.css">
+    <link rel="stylesheet" href="CSS/tools.css">
+    <link rel="stylesheet" href="font-awesome.css/font-awesome.css">
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <script src="JS/comic.js"></script>
+    <style>
+        .goTo_top{
+            position: fixed;
+            width: 60px;
+            height: 50px;
+            bottom: 40px;
+            right: 40px;
+            /*display: block;*/
+            color: #8a0000;
+            font-size: 5rem;
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<!--header -->
+<header id="header">
+    <div class="top_main">
+        <div class="sign_in">
+            <div class="sign_in_click">
+                <i class="fa fa-sign-in fa-fw"></i>
+            </div>
+            <div class="sign_in_panel" id="sign_in_panel">
+                <img src="images/LOGO.jpg" alt="">
+                <a href="" class="sign_in_button">SIGN IN</a>
+                <a href="" class="create_id">CREATE AN ACCOUNT</a>
+            </div>
+        </div>
+        <a href="../../index.html" class="LOGO"><img src="images/LOGO.jpg" alt=""></a>
+    </div>
+    <div class="top_guide">
+        <ul id="top_guide" class="top_guide_menu">
+            <li data-menuanchor="News"><a href="#News">News</a></li>
+            <li data-menuanchor="Comics"><a href="#Comics">Read Comics</a></li>
+            <li data-menuanchor="TV"><a href="#TV">TV Shows</a></li>
+            <li data-menuanchor="Movies"><a href="#Movies">Movies</a></li>
+        </ul>
+        <div class="top_guide_container">
+            <div class="top_guide_content top_guide_active">
+                <div class="section News" id="News">
+                    <div class="news_title">
+                        <span>LASTED</span>
+                        <span>NEWS!</span>
+                        <span></span>
+                    </div>
+                    <div class="news_more wrapper">
+                        <a href="pages/News/News.html">MORE..</a>
+                    </div>
+                    <div class="news_lists">
+                        <ul >
+                            <li>
+                                <a href=""><img src="../top_guide_img/news/1.png" alt="" class="effect"></a>
+                                <h3>COMICS</h3>
+                                <a href="">
+                                    <p>This Week in Marvel Visits MoPOP's Marvel Exhibit and Gets a Look at the Creation of Comics</p>
+                                </a>
+                                <h4>2 Days ago</h4>
+                            </li>
+                            <li>
+                                <a href=""><img src="../top_guide_img/news/2.jpg" alt="" class="effect"></a>
+                                <h3 class="hot">MOVIES:Spider Man II</h3>
+                                <a href="">
+                                    <p>Welcome our new friend——spider man</p>
+                                </a>
+                                <h4>4 Days ago</h4>
+                            </li>
+                            <li>
+                                <a href=""><img src="../top_guide_img/news/1.png" alt="" class="effect"></a>
+                                <h3>COMICS</h3>
+                                <a href="">
+                                    <p>Bryan Edward Hill Reveals the Tech World of the Upcoming 'What If? X-Men'</p>
+                                </a>
+                                <h4>2 Days ago</h4>
+                            </li>
+                            <li>
+                                <a href=""><img src="../top_guide_img/news/2.jpg" alt="" class="effect"></a>
+                                <h3>COMICS</h3>
+                                <a href="">
+                                    <p>Bryan Edward Hill Reveals the Tech World of the Upcoming 'What If? X-Men'</p>
+                                </a>
+                                <h4>A Week ago</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="top_guide_content">
+                <div class="section Read_Comics">
+                    <div class="comic_read">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/comic/comic_book/1.jpg" alt="">
+                                    <h3>Fantastic Four</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/comic/comic_book/2.jpg" alt="">
+                                    <h3>Iceman</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/comic/comic_book/3.jpg" alt="">
+                                    <h3>Infinity Wars</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/comic/comic_book/4.jpg" alt="">
+                                    <h3>Star Wars:The Last Jedi Adaptation</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="comic_title">
+                        <div class="comic_background"></div>
+                        <div class="comic_sub_title">
+                            <p>MARVEL UNLIMITED</p>
+                            <h3>ENJOY THE COMIC</h3>
+                            <a href="../../pages/Comic/Comic.html" target="_blank">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top_guide_content">
+                <div class="section TV_Shows">
+                    <div class="shows_main">
+                        <div class="shows_title">
+                            <h2>TV SHOWS</h2>
+                            <p>EXPLORE THE CHARACTERS AND STORIES THAT SHAPE MARVEL TV!</p>
+                            <a href="../../pages/Movies/movie.html#Latest-tv-series" target="_blank">Watch More..</a>
+                        </div>
+                    </div>
+                    <div class="shows_watch">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/shows/shows1.jpg" alt="">
+                                    <h3>Marvel's Iron Fist I Season 2</h3>
+                                    <span>SEP 7.2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/shows/shows2.jpg" alt="">
+                                    <h3>Marvel's Luke Cage I Season 2</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/shows/shows3.jpg" alt="">
+                                    <h3>Marvel's Jessica Jones I Season 2</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/shows/shows4.jpg" alt="">
+                                    <h3>Marvel's Cloak & Dagger I Season 1</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/shows/shows6.jpg" alt="">
+                                    <h3>Marvel's Iron Fist I Season 2</h3>
+                                    <span>SEP 7.2018</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="top_guide_content">
+                <div class="section Movie_guide">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="../top_guide_img/movie/复仇者联盟4.jpg" alt="">
+                                <span>复仇者联盟4</span>
+                                <div class="movie_detail">
+                                    <span>2019</span>
+                                    <div class="block-stars">
+                                        <ul class="w3l-ratings">
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../top_guide_img/movie/复仇者联盟3.jpg" alt="">
+                                <span>复仇者联盟3</span>
+                                <div class="movie_detail">
+                                    <span>2018</span>
+                                    <div class="block-stars">
+                                        <ul class="w3l-ratings">
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../top_guide_img/movie/惊奇队长.jpg" alt="">
+                                <span>惊奇队长</span>
+                                <div class="movie_detail">
+                                    <span>2019</span>
+                                    <div class="block-stars">
+                                        <ul class="w3l-ratings">
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../top_guide_img/movie/蜘蛛侠1.jpg" alt="">
+                                <span>蜘蛛侠：返校季</span>
+                                <div class="movie_detail">
+                                    <span>2018</span>
+                                    <div class="block-stars">
+                                        <ul class="w3l-ratings">
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../top_guide_img/movie/黑豹1.jpeg" alt="">
+                                <span>黑豹</span>
+                                <div class="movie_detail">
+                                    <span>2018</span>
+                                    <div class="block-stars">
+                                        <ul class="w3l-ratings">
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="">MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<script type="text/javascript">
+    $(".top_guide").hover(function () {
+        $(".top_guide_container").stop().fadeIn();
+    },function () {
+        $(".top_guide_container").stop().fadeOut();
+    });
+    $("#top_guide li").each(function (index) {
+        var liNode= $(this);
+        liNode.hover(function () {
+            console.log(liNode);
+            timeoutId = setTimeout(function () {
+                $(".top_guide_content.top_guide_active").removeClass("top_guide_active");
+                $(".top_guide_content").eq(index).addClass("top_guide_active");
+            })
+        })
+    })
+</script>
+<!--header end!!-->
+    <div class="comic_main">
+
+        <div class="comic_main_guide">
+            <div class="back_top_font">
+                <a href="">
+                    <i class="fa fa-fw fa-arrow-left"></i>
+                    <span>BACK TO SERIES</span>
+                </a>
+                <a href="javascript:;" id="comicCollection">
+                    <i class="fa fa-fw fa-heart-o"></i>
+                    <span>COLLECT</span>
+                </a>
+            </div>
+        </div>
+        <script>
+            $("#comicCollection").click(function () {
+
+            })
+        </script>
+
+        <div class="comic_main_content">
+            <div class="comic_main_show">
+                <div class="comic_img pull-left">
+                    <img src="images/9.jpg" alt="">
+                </div>
+                <div class="comic_detail pull-left">
+                    <h2>Black Panther Vs. Deadpool (2018) #1</h2>
+                    <div class="comic_time">
+                        <span>Published:</span>
+                        <span>October 24, 2018</span>
+                    </div>
+                    <div class="comic_score">
+                        <span>Comic Score:</span>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="comic_summery">
+                        <span>Brief Description:</span>
+                        <p>VIBRANIUM BULLETS AND REGROWING LIMBS – EVERYTHING YOU WANT FROM A COMIC IS HERE! Deadpool’s teamed up with, taken down or taken a beating from just about every hero in the Marvel Universe - And no way is the Black Panther going to miss out on his turn! From Late Show writer Daniel Kibblesmith comes a hilarious romp through Wakanda as Deadpool goes on the hunt for the world’s most valuable resource: Vibranium! When a beloved figure of the Marvel Universe becomes collateral damage in a fight between Deadpool and the Wrecker, the heroic Deadpool sets out to obtain a fragment of Vibranium that could save the victim’s life. But his unconventional methods — ranging from poaching to dismemberment — don’t sit well with the King of Wakanda, and Deadpool’s about to learn that you don’t bring a sword to a claw fight!</p>
+                    </div>
+                    <div class="comic_num">
+                        <div class="span_div">
+                            <span>Read Now!</span>
+                        </div>
+                        <ul>
+                            <li><a href="">1卷</a></li>
+                            <li><a href="">2卷</a></li>
+                            <li><a href="">3卷</a></li>
+                            <li><a href="">4卷</a></li>
+                            <li><a href="">5卷</a></li>
+                            <li><a href="">6卷</a></li>
+                            <li><a href="">7卷</a></li>
+                            <li><a href="">8卷</a></li>
+                            <li><a href="">9卷</a></li>
+                        </ul>
+                        <script>
+                            $(".span_div").click(function () {
+                                $(".comic_num ul").stop().slideToggle();
+                            })
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="comic_recommended">
+        <div class="comic_recommended_container">
+
+            <ul>
+                <li>
+                    <a href="" ><img class="shadow" src="images/1.jpg" alt=""></a>
+                    <span>What If? The Punisher #1</span>
+                    <span>Potts, Ramirez</span>
+                    <div class="comic_score">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img  class="shadow" src="images/2.jpg" alt=""></a>
+                    <span>Solo: A Star Wars Story Adaptation #1</span>
+                    <span>Thompson, Noto</span>
+                    <div class="comic_score">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img class="shadow" src="images/3.jpg" alt=""></a>
+                    <span>Wolverine & the X-Men #35</span>
+                    <span>Aaron, Bradshaw</span>
+                    <div class="comic_score">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img class="shadow" src="images/4.jpg" alt=""></a>
+                    <span>Wolverine & the X-Men #35</span>
+                    <span>Aaron, Bradshaw</span>
+                    <div class="comic_score">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img class="shadow" src="images/5.jpg" alt=""></a>
+                    <span>Iceman #2</span>
+                    <span>Grace, Stockman</span>
+                    <div class="comic_score">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="news_comment info_send_container about_comic">
+        <div class="send_zoom" id="edit_form">
+            <span>发表你的看法~</span>
+            <span id="text_length"></span>
+            <form action="" role="form" class="clearfix "  id="myForm" >
+                <div class="form_group" >
+                    <!--输入框-->
+                    <div class="send_box" id="sendBox" >
+                        <div class="send_input" id="sendInput" contenteditable="true" tabindex="1" ></div>
+                    </div>
+                    <!--添加表情和图片区域-->
+                    <div class="send_box_sub" id="sendBoxSub">
+                        <span id="myEmoji"><i class="fa-fw fa-smile-o fa"></i>表情</span>
+                        <div class="my_emoji">
+                            <ul id="myTab">
+                                <li class="li_active emoji_set"><a href="javascript:;">预设</a></li>
+                                <li class="emoji_hot"><a href="javascript:;">热门</a></li>
+                            </ul>
+                            <div id="myTabContent" class="tab-content">
+                                <div class="tab_pane active_pane" id="set">
+                                    <div class="emoji_1">
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="hot">
+                                    <div class="emoji_2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" id="send" class="msg_send pull-right disabled" disabled="true">发布</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="msg_show" id="msgShow">
+            <div class="msg_come ">
+                <div class="msg_come_sub">
+                    <div class="person_img">
+                        <img src="images/1.jpg" alt="">
+                    </div>
+                    <div class="msg_info">
+                        <h3>shane Leo</h3>
+                        <span>7分钟前</span>
+                    </div>
+                    <div class="msg_box">
+                        <div class="msg_content">
+                            <p>woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa</p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment_pic">
+                        <span><i class="fa fa-fw fa-edit fa-edit-block"></i></span>
+                        <span style="font-size: 1.5vw">|</span>
+                        <span>11</span>
+                        <span id="thumbsGood"><i class="fa fa-fw fa-heart-o heart"></i></span>
+                    </div>
+                    <div class="comment_now">
+                    </div>
+                </div>
+                <!--评论发布的动态区域-->
+                <div class="comment_sub">
+                    <!--评论人的头像-->
+                    <div class="comment_per_img pull-left">
+                        <img src="images/person2.jpg" alt="">
+                    </div>
+                    <!--评论人的信息-->
+                    <div class="comment_per_info pull-left">
+                        <!--评论人的名字和评论内容-->
+                        <div class="comment_per_info_content">
+                            <a href="#" class="comment_per_name">shane mark:</a>
+                            <span class="comment_per_say">你说的对你说的对你说的对你说的对你说的对你说的对你说的对
+                                    你说的对你说的对你说的对你说的对你说的对你说的对你说的对
+                                    你说的对你说的对你说的对你说的对你说的对你说的对你说的对</span>
+                        </div>
+                        <!--评论人评论的时间以及回复-->
+                        <div class="comment_per_time">
+                            <span class="comment_per_time_show pull-left">2018-7-21 18:0:0</span>
+                            <span class="span_delete">删除</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="msg_come">
+                <div class="msg_come_sub">
+                    <div class="person_img">
+                        <img src="images/person3.jpg" alt="">
+                    </div>
+                    <div class="msg_info">
+                        <h3>shane Leo</h3>
+                        <span>7分钟前</span>
+                    </div>
+                    <div class="msg_box">
+                        <div class="msg_content">
+                            <p>woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa</p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment_pic">
+                        <span><i class="fa fa-fw fa-edit fa-edit-block"></i></span>
+                        <span style="font-size: 1.5vw">|</span>
+                        <span>11</span>
+                        <span id="thumbsGood"><i class="fa fa-fw fa-heart-o heart"></i></span>
+                    </div>
+                    <div class="comment_now">
+                    </div>
+                </div>
+                <!--评论发布的动态区域-->
+                <div class="comment_sub">
+                    <!--评论人的头像-->
+                    <div class="comment_per_img pull-left">
+                        <img src="images/person1.jpg" alt="">
+                    </div>
+                    <!--评论人的信息-->
+                    <div class="comment_per_info pull-left">
+                        <!--评论人的名字和评论内容-->
+                        <div class="comment_per_info_content">
+                            <a href="#" class="comment_per_name">shane mark:</a>
+                            <span class="comment_per_say">你说的对你说的对你说的对你说的对你说的对你说的对你说的对
+                                    你说的对你说的对你说的对你说的对你说的对你说的对你说的对
+                                    你说的对你说的对你说的对你说的对你说的对你说的对你说的对</span>
+                        </div>
+                        <!--评论人评论的时间以及回复-->
+                        <div class="comment_per_time">
+                            <span class="comment_per_time_show pull-left">2018-7-21 18:0:0</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="msg_come">
+                <div class="msg_come_sub">
+                    <div class="person_img">
+                        <img src="images/person2.jpg" alt="">
+                    </div>
+                    <div class="msg_info">
+                        <h3>shane Leo</h3>
+                        <span>7分钟前</span>
+                    </div>
+                    <div class="msg_box">
+                        <div class="msg_content">
+                            <p>woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa
+                                woshizhuwsadsadasdasdasdasdasdasdsadasdasdsadasdasdasdsadadasdsa</p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment_pic">
+                        <span><i class="fa fa-fw fa-edit fa-edit-block"></i></span>
+                        <span style="font-size: 1.5vw">|</span>
+                        <span>11</span>
+                        <span id="thumbsGood"><i class="fa fa-fw fa-heart-o heart"></i></span>
+                    </div>
+                    <div class="comment_now">
+                    </div>
+                </div>
+                <!--评论发布的动态区域-->
+                <div class="comment_sub">
+                    <!--评论人的头像-->
+                    <div class="comment_per_img pull-left">
+                        <img src="../img/1.jpg" alt="">
+                    </div>
+                    <!--评论人的信息-->
+                    <div class="comment_per_info pull-left">
+                        <!--评论人的名字和评论内容-->
+                        <div class="comment_per_info_content">
+                            <a href="#" class="comment_per_name">shane mark:</a>
+                            <span class="comment_per_say">你说的对你说的对你说的对你说的对你说的对你说的对你说的对
+                                    你说的对你说的对你说的对你说的对你说的对你说的对你说的对
+                                    你说的对你说的对你说的对你说的对你说的对你说的对你说的对</span>
+                        </div>
+                        <!--评论人评论的时间以及回复-->
+                        <div class="comment_per_time">
+                            <span class="comment_per_time_show pull-left">2018-7-21 18:0:0</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <a class="goTo_top" href="javascript:;"><i class="fa fa-fw fa-arrow-circle-up"></i></a>
+</body>
+</html>

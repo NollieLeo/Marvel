@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/tools.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/news.js"></script>
+    <style>
+        .goTo_top{
+            position: fixed;
+            width: 60px;
+            height: 50px;
+            bottom: 40px;
+            right: 40px;
+            /*display: block;*/
+            color: #8a0000;
+            font-size: 5rem;
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<!--header -->
+    <header id="header">
+    <div class="top_main">
+        <div class="sign_in">
+            <div class="sign_in_click">
+                <i class="fa fa-sign-in fa-fw"></i>
+            </div>
+            <div class="sign_in_panel" id="sign_in_panel">
+                <img src="images/LOGO.jpg" alt="">
+                <a href="" class="sign_in_button">SIGN IN</a>
+                <a href="" class="create_id">CREATE AN ACCOUNT</a>
+            </div>
+        </div>
+        <a href="../../index.html" class="LOGO"><img src="images/LOGO.jpg" alt=""></a>
+    </div>
+    <div class="top_guide">
+        <ul id="top_guide" class="top_guide_menu">
+            <li data-menuanchor="News"><a href="#News">News</a></li>
+            <li data-menuanchor="Comics"><a href="#Comics">Read Comics</a></li>
+            <li data-menuanchor="TV"><a href="#TV">TV Shows</a></li>
+            <li data-menuanchor="Movies"><a href="#Movies">Movies</a></li>
+        </ul>
+        <div class="top_guide_container">
+            <div class="top_guide_content top_guide_active">
+                <div class="section News" id="News">
+                    <div class="news_title">
+                        <span>LASTED</span>
+                        <span>NEWS!</span>
+                        <span></span>
+                    </div>
+                    <div class="news_more wrapper">
+                        <a href="pages/News/News.html">MORE..</a>
+                    </div>
+                    <div class="news_lists">
+                        <ul >
+                            <li>
+                                <a href=""><img src="../top_guide_img/news/1.png" alt="" class="effect"></a>
+                                <h3>COMICS</h3>
+                                <a href="">
+                                    <p>This Week in Marvel Visits MoPOP's Marvel Exhibit and Gets a Look at the Creation of Comics</p>
+                                </a>
+                                <h4>2 Days ago</h4>
+                            </li>
+                            <li>
+                                <a href=""><img src="../top_guide_img/news/2.jpg" alt="" class="effect"></a>
+                                <h3 class="hot">MOVIES:Spider Man II</h3>
+                                <a href="">
+                                    <p>Welcome our new friend——spider man</p>
+                                </a>
+                                <h4>4 Days ago</h4>
+                            </li>
+                            <li>
+                                <a href=""><img src="../top_guide_img/news/1.png" alt="" class="effect"></a>
+                                <h3>COMICS</h3>
+                                <a href="">
+                                    <p>Bryan Edward Hill Reveals the Tech World of the Upcoming 'What If? X-Men'</p>
+                                </a>
+                                <h4>2 Days ago</h4>
+                            </li>
+                            <li>
+                                <a href=""><img src="../top_guide_img/news/2.jpg" alt="" class="effect"></a>
+                                <h3>COMICS</h3>
+                                <a href="">
+                                    <p>Bryan Edward Hill Reveals the Tech World of the Upcoming 'What If? X-Men'</p>
+                                </a>
+                                <h4>A Week ago</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="top_guide_content">
+                <div class="section Read_Comics">
+                    <div class="comic_read">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/comic/comic_book/1.jpg" alt="">
+                                    <h3>Fantastic Four</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/comic/comic_book/2.jpg" alt="">
+                                    <h3>Iceman</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/comic/comic_book/3.jpg" alt="">
+                                    <h3>Infinity Wars</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/comic/comic_book/4.jpg" alt="">
+                                    <h3>Star Wars:The Last Jedi Adaptation</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="comic_title">
+                        <div class="comic_background"></div>
+                        <div class="comic_sub_title">
+                            <p>MARVEL UNLIMITED</p>
+                            <h3>ENJOY THE COMIC</h3>
+                            <a href="../../pages/Comic/Comic.html" target="_blank">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top_guide_content">
+                <div class="section TV_Shows">
+                    <div class="shows_main">
+                        <div class="shows_title">
+                            <h2>TV SHOWS</h2>
+                            <p>EXPLORE THE CHARACTERS AND STORIES THAT SHAPE MARVEL TV!</p>
+                            <a href="../../pages/Movies/movie.html#Latest-tv-series" target="_blank">Watch More..</a>
+                        </div>
+                    </div>
+                    <div class="shows_watch">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/shows/shows1.jpg" alt="">
+                                    <h3>Marvel's Iron Fist I Season 2</h3>
+                                    <span>SEP 7.2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/shows/shows2.jpg" alt="">
+                                    <h3>Marvel's Luke Cage I Season 2</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/shows/shows3.jpg" alt="">
+                                    <h3>Marvel's Jessica Jones I Season 2</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/shows/shows4.jpg" alt="">
+                                    <h3>Marvel's Cloak & Dagger I Season 1</h3>
+                                    <span>2018</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../top_guide_img/shows/shows6.jpg" alt="">
+                                    <h3>Marvel's Iron Fist I Season 2</h3>
+                                    <span>SEP 7.2018</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="top_guide_content">
+                <div class="section Movie_guide">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="../top_guide_img/movie/复仇者联盟4.jpg" alt="">
+                                <span>复仇者联盟4</span>
+                                <div class="movie_detail">
+                                    <span>2019</span>
+                                    <div class="block-stars">
+                                        <ul class="w3l-ratings">
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../top_guide_img/movie/复仇者联盟3.jpg" alt="">
+                                <span>复仇者联盟3</span>
+                                <div class="movie_detail">
+                                    <span>2018</span>
+                                    <div class="block-stars">
+                                        <ul class="w3l-ratings">
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../top_guide_img/movie/惊奇队长.jpg" alt="">
+                                <span>惊奇队长</span>
+                                <div class="movie_detail">
+                                    <span>2019</span>
+                                    <div class="block-stars">
+                                        <ul class="w3l-ratings">
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../top_guide_img/movie/蜘蛛侠1.jpg" alt="">
+                                <span>蜘蛛侠：返校季</span>
+                                <div class="movie_detail">
+                                    <span>2018</span>
+                                    <div class="block-stars">
+                                        <ul class="w3l-ratings">
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../top_guide_img/movie/黑豹1.jpeg" alt="">
+                                <span>黑豹</span>
+                                <div class="movie_detail">
+                                    <span>2018</span>
+                                    <div class="block-stars">
+                                        <ul class="w3l-ratings">
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="">MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+    <script type="text/javascript">
+    $(".top_guide").hover(function () {
+        $(".top_guide_container").stop().fadeIn();
+    },function () {
+        $(".top_guide_container").stop().fadeOut();
+    });
+    $("#top_guide li").each(function (index) {
+        var liNode= $(this);
+        liNode.hover(function () {
+            console.log(liNode);
+            timeoutId = setTimeout(function () {
+                $(".top_guide_content.top_guide_active").removeClass("top_guide_active");
+                $(".top_guide_content").eq(index).addClass("top_guide_active");
+            })
+        })
+    })
+</script>
+<!--header end!!-->
+    <div class="news_slider">
+        <ul class="news_content">
+            <li>
+                <h3>RYAN STEGMAN IN THE HOT SEAT</h3>
+                <p>The VENOM artist takes questions from a few fans on Twitter, as well as some questions from some special guests that he may or may not be working with.</p>
+                <a href="">MORE</a>
+            </li>
+            <li>
+                <h3>WHO ARE THE NEW GUARDIANS OF THE GALAXY?</h3>
+                <p>Find out this January from Donny Cates and Geoff Shaw with a cover by David Marquez!</p>
+                <a href="">MORE</a>
+            </li>
+            <li>
+                <h3>#FAKESPIDERMANFACTS DEBUNKED</h3>
+                <p>How well do you know your Friendly Neighborhood Spider-Man?</p>
+                <a href="">MORE</a>
+            </li>
+            <li>
+                <h3>JACK KIRBY: A TO Z</h3>
+                <p>This Week in Marvel host Ryan "Agent M" Penagos celebrates the King with an alphabetical look at Kirby’s creations, ideas, and legacy!</p>
+                <a href="">MORE</a>
+            </li>
+            <li>
+                <h3>UPCOMING HASBRO MARVEL LEGENDS FIGURES</h3>
+                <p>Hasbro’s Bobby Vala and Ryan Ting discuss much-anticipated releases!</p>
+                <a href="">MORE</a>
+            </li>
+        </ul>
+        <ul class="news_slide_hover">
+            <li>
+                <p></p>
+                <span>Ryan Stegman In The Hot Seat</span>
+            </li>
+            <li><p></p><span>Who Are The New Guardians Of The Galaxy?</span></li>
+            <li><p></p><span>#Fake Spider Man Facts Debunked</span></li>
+            <li><p></p><span>Jack Kirby: A To Z</span></li>
+            <li><p></p><span>Upcoming Hasbro Marvel Legends Figures</span></li>
+        </ul>
+
+        <div class="btn_container">
+            <div class="btn btn-left"><i class="fa fa-fw fa-chevron-left"></i></div>
+            <div class="btn btn-right"><i class="fa fa-fw fa-chevron-right"></i></div>
+        </div>
+
+    </div>
+    <div class="news_sub_title">
+        <span></span>
+        <h2>THE MOST POPULAR NEWS</h2>
+    </div>
+    <div class="news_sub_content">
+        <ul>
+            <li>
+                <a href=""><img src="images/news1.png" alt=""></a>
+                <p>This Week in Marvel Visits MoPOP's Marvel Exhibit and Gets a Look at the Creation of Comics</p>
+                <span>2 Days ago</span>
+            </li>
+            <li>
+                <a href=""><img src="images/news2.jpg" alt=""></a>
+                <p>Welcome our new friend——spider man</p>
+                <span>4 Days ago</span>
+            </li>
+            <li>
+                <a href=""><img src="images/news3.jpg" alt=""></a>
+                <p>Just how complex of a character is Venom? This week in Marvel</p>
+                <span>4 Days ago</span>bbbt123.con
+            </li>
+            <li>
+                <a href=""><img src="images/news4.jpg" alt=""></a>
+                <p>An Update on ‘Marvel’s Iron Fist’</p>
+                <span>2 Days ago</span>
+            </li>
+        </ul>
+    </div>
+    <div class="news_sub_title">
+        <span></span>
+        <h2>THE LASTED</h2>
+    </div>
+    <div class="news_container">
+        <ul>
+            <li>
+                <div class="news_img">
+                    <a href="news1.html" target="_blank"><img src="images/news_main1.jpg" alt=""></a>
+                </div>
+                <div class="news_main">
+                    <span>TV SHOWS</span>
+                    <p>‘Marvel’s Daredevil’ Season 3 Primer: Where We Left Off</p>
+                    <span>3 HOURS AGO</span>
+                </div>
+            </li>
+            <li>
+                <div class="news_img">
+                    <a href=""><img src="images/news_main2.jpg" alt=""></a>
+                </div>
+                <div class="news_main">
+                    <span>TV SHOWS</span>
+                    <p>A Mutant Detention Facility Raid Becomes the Focus on a New Episode of ‘The Gifted’</p>
+                    <span>6 HOURS AGO</span>
+                </div>
+            </li>
+            <li>
+                <div class="news_img">
+                    <a href=""><img src="images/news_main3.jpg" alt=""></a>
+                </div>
+                <div class="news_main">
+                    <span>COMIC</span>
+                    <p>Halloween Spooklight: Journey Into Mystery #2</p>
+                    <span>7 HOURS AGO</span>
+                </div>
+            </li>
+            <li>
+                <div class="news_img">
+                    <a href=""><img src="images/news_main4.jpg" alt=""></a>
+                </div>
+                <div class="news_main">
+                    <span>COMIC</span>
+                    <p>Updated: Read a New Halloween-Themed Comic Every Day This October</p>
+                    <span>8 HOURS AGO</span>
+                </div>
+            </li>
+            <li>
+                <div class="news_img">
+                    <a href=""><img src="images/news_main5.jpg" alt=""></a>
+                </div>
+                <div class="news_main">
+                    <span>THIS WEEK IN MARVEL</span>
+                    <p>How Many Canadian Marvel Characters Can Tom Green Name? | This Week In Marvel</p>
+                    <span>9 HOURS AGO</span>
+                </div>
+            </li>
+            <li>
+                <div class="news_img">
+                    <a href=""><img src="images/news_main6.jpg" alt=""></a>
+                </div>
+                <div class="news_main">
+                    <span>COMIC</span>
+                    <p>Who Are the New Guardians of the Galaxy?</p>
+                    <span>3 Days ago</span>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <a href="javascript:;" class="goTo_top"><i class="fa fa-fw fa-angle-double-up"></i></a>
+    <script>
+        //    到头部
+        $(window).scroll(function () {
+            var height = $(this).scrollTop();
+            if (height>400){
+                $(".goTo_top").stop().fadeIn();
+            } else {
+                $(".goTo_top").stop().fadeOut();
+            }
+        });
+        //    点击回头
+        $(".goTo_top").stop().click(function () {
+            $("body,html").animate({
+                scrollTop:0
+            },500);
+        })
+    </script>
+</body>
+</html>

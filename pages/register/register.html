@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/tools.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/register.js"></script>
+</head>
+<body>
+    <div class="container_show">
+        <div class="sign_in_zoom pull-left">
+            <div class="sign_in_now">
+                <div class="signInNow_panel pull-left">
+                    <div class="first_sign pull-left">
+                        <div class="signIn_logo">
+                            <img src="images/LOGO.jpg" alt="">
+                        </div>
+                        <form action="">
+                            <h2>SIGN IN</h2>
+                            <div>
+                                <input class="inp" id="username2" type="text" value="" placeholder="USERNAME">
+                            </div>
+                            <div>
+                                <input class="inp" id="password2" type="password" value="" placeholder="PASSWORD">
+                            </div>
+                            <div>
+                                <label>完成验证：</label>
+                                <div id="captcha2">
+                                    <p id="wait2" class="show">正在加载验证码......</p>
+                                </div>
+                            </div>
+                            <br>
+                            <p id="notice2" class="hide">请先完成验证</p>
+                            <input class="btn" id="submit2" type="submit" value="SIGN IN">
+                        </form>
+                    </div>
+                    <div class="second_sign pull-left" style="display: none;">
+                        <div class="signIn_logo">
+                            <img src="images/LOGO.jpg" alt="">
+                        </div>
+                        <form action="">
+                            <h2>SIGN IN</h2>
+                            <div>
+                                <input class="inp" id="username1" type="text" value="" placeholder="TELEPHONE NUM">
+                            </div>
+                            <div>
+
+                                <input class="inp" id="password1" type="password" value="" placeholder="CHECK NUM">
+                            </div>
+                            <div>
+                                <label>完成验证：</label>
+                                <div id="captcha1">
+                                    <p id="wait1" class="show">正在加载验证码......</p>
+                                </div>
+                            </div>
+                            <br>
+                            <p id="notice1" class="hide">请先完成验证</p>
+                            <input class="btn" id="submit1" type="submit" value="SIGN IN">
+                        </form>
+                    </div>
+                    <ul>
+                        <li id="firstSign" class="active_li">USERNAME SIGN</li>
+                        <li id="secondSign">TELEPHONE SIGN</li>
+                    </ul>
+                </div>
+                <div class="sign_in_shadow"></div>
+            </div>
+        </div>
+        <div class="register_zoom pull-left">
+            <div class="register_now">
+                <div class="registerNow_panel">
+                    <div class="signIn_logo" style="margin-top: 0">
+                        <img src="images/LOGO.jpg" alt="" style="width: 50%">
+                    </div>
+                    <form action=" ">
+                        <h2>SIGN UP</h2>
+                        <div>
+                            <input class="inp" id="username3" type="text" value="" placeholder="SIGN USERNAME">
+                        </div>
+                        <div>
+                            <input type="text" class="inp" id="telNum" type="text" placeholder="Telephone Num">
+                        </div>
+                        <div>
+                            <input class="inp" id="password3" type="password" value="" placeholder="PASSWORD">
+                        </div>
+                        <div>
+                            <input class="inp" id="password4" type="password" value="" placeholder="CHECK YOUR PASSWORD">
+                        </div>
+                        <div>
+                            <label>完成验证：</label>
+                            <div id="captcha3">
+                                <p id="wait3" class="show">正在加载验证码......</p>
+                            </div>
+                        </div>
+                        <p id="notice3" class="hide">请先完成验证</p>
+                        <input class="btn" id="submit3" type="submit" value="SIGN UP">
+                    </form>
+                </div>
+                <div class="register_zoom_shadow"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
